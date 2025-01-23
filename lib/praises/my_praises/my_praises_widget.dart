@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'my_praises_model.dart';
 export 'my_praises_model.dart';
 
@@ -85,7 +81,7 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'My Praises',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -98,7 +94,7 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -108,16 +104,16 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
                 child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 150.0,
                           height: 150.0,
@@ -201,11 +197,11 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -215,7 +211,7 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor: FlutterFlowTheme.of(context).primary,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
@@ -226,13 +222,13 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: 'My Praises',
                             ),
@@ -254,11 +250,11 @@ class _MyPraisesWidgetState extends State<MyPraisesWidget>
                           controller: _model.tabBarController,
                           children: [
                             Container(),
-                            Column(
+                            const Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [],
                             ),
-                            Column(
+                            const Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [],
                             ),

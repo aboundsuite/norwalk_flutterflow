@@ -6,12 +6,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'prayer_list_model.dart';
 export 'prayer_list_model.dart';
 
@@ -88,7 +86,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -100,11 +98,11 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
             children: [
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -114,7 +112,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor: FlutterFlowTheme.of(context).primary,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
@@ -125,13 +123,13 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: 'Church Prayers',
                             ),
@@ -150,7 +148,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                           controller: _model.tabBarController,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: FutureBuilder<ApiCallResponse>(
                                 future: (_model.apiRequestCompleter2 ??=
@@ -187,7 +185,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                         r'''$''',
                                       ).toList();
                                       if (prayerList.isEmpty) {
-                                        return EmptyListWidget();
+                                        return const EmptyListWidget();
                                       }
 
                                       return RefreshIndicator(
@@ -213,7 +211,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                             final prayerListItem =
                                                 prayerList[prayerListIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 10.0),
                                               child: Container(
@@ -227,7 +225,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                           10.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 12.0),
                                                   child: Column(
@@ -241,11 +239,11 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           8.0,
@@ -271,17 +269,17 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               10.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           -1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -339,7 +337,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     0.0,
@@ -354,7 +352,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -403,7 +401,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                     height:
                                                                         50.0,
                                                                     decoration:
-                                                                        BoxDecoration(),
+                                                                        const BoxDecoration(),
                                                                     child: Row(
                                                                       mainAxisSize:
                                                                           MainAxisSize
@@ -425,7 +423,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -497,7 +495,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                         ) ==
                                                                         false)
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             1.0,
                                                                             1.0),
                                                                         child:
@@ -529,12 +527,12 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 40.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 0.0,
                                                                                 16.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -561,7 +559,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                         ) ==
                                                                         true)
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             1.0,
                                                                             1.0),
                                                                         child:
@@ -584,12 +582,12 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 40.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 0.0,
                                                                                 16.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -637,7 +635,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 0.0),
                                   child: FutureBuilder<ApiCallResponse>(
                                     future: (_model.apiRequestCompleter1 ??=
@@ -677,7 +675,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                             r'''$''',
                                           ).toList();
                                           if (userPrayerList.isEmpty) {
-                                            return EmptyListWidget();
+                                            return const EmptyListWidget();
                                           }
 
                                           return RefreshIndicator(
@@ -703,7 +701,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                     userPrayerList[
                                                         userPrayerListIndex];
                                                 return Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(20.0, 0.0, 20.0,
                                                           10.0),
                                                   child: Container(
@@ -718,7 +716,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -735,11 +733,11 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -1.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           8.0,
@@ -765,17 +763,17 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               10.0),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Align(
-                                                                      alignment: AlignmentDirectional(
+                                                                      alignment: const AlignmentDirectional(
                                                                           -1.0,
                                                                           -1.0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             0.0,
                                                                             16.0,
@@ -825,7 +823,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -840,7 +838,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                       .spaceBetween,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -889,7 +887,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                         height:
                                                                             50.0,
                                                                         decoration:
-                                                                            BoxDecoration(),
+                                                                            const BoxDecoration(),
                                                                         child:
                                                                             Row(
                                                                           mainAxisSize:
@@ -908,7 +906,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                                   ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                                                                               child: Text(
                                                                                 'Praying ',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -973,7 +971,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                             false)
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(1.0, 1.0),
+                                                                                const AlignmentDirectional(1.0, 1.0),
                                                                             child:
                                                                                 FFButtonWidget(
                                                                               onPressed: () async {
@@ -995,8 +993,8 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               ),
                                                                               options: FFButtonOptions(
                                                                                 height: 40.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       font: GoogleFonts.notoSans(),
@@ -1015,7 +1013,7 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                             true)
                                                                           Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(1.0, 1.0),
+                                                                                const AlignmentDirectional(1.0, 1.0),
                                                                             child:
                                                                                 FFButtonWidget(
                                                                               onPressed: () {
@@ -1029,8 +1027,8 @@ class _PrayerListWidgetState extends State<PrayerListWidget>
                                                                               ),
                                                                               options: FFButtonOptions(
                                                                                 height: 40.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: Colors.white,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       font: GoogleFonts.notoSans(),

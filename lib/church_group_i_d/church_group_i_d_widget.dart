@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'church_group_i_d_model.dart';
 export 'church_group_i_d_model.dart';
 
@@ -47,7 +44,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: ChurchGroupIDCall.call(
         authToken: currentAuthenticationToken,
-        churchgroupId: widget!.churchGroupID,
+        churchgroupId: widget.churchGroupID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -100,11 +97,11 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -148,7 +145,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -213,13 +210,13 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                       ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 20.0, 10.0, 20.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -228,7 +225,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                 FutureBuilder<ApiCallResponse>(
                                   future: GroupMemberExistsCall.call(
                                     authToken: currentAuthenticationToken,
-                                    churchgroupId: widget!.churchGroupID,
+                                    churchgroupId: widget.churchGroupID,
                                   ),
                                   builder: (context, snapshot) {
                                     // Customize what your widget looks like when it's loading.
@@ -260,7 +257,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                             false)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 _model.joinGroup =
@@ -268,7 +265,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                                   authToken:
                                                       currentAuthenticationToken,
                                                   churchgroupId:
-                                                      widget!.churchGroupID,
+                                                      widget.churchGroupID,
                                                 );
 
                                                 safeSetState(() {});
@@ -283,11 +280,11 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -318,7 +315,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                             true)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -333,11 +330,11 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -380,7 +377,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 20.0, 0.0, 20.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -400,7 +397,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -409,7 +406,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 0.0, 20.0),
                                 child: Text(
                                   'Group Leader: ${ChurchGroupIDCall.leaderName(
@@ -427,7 +424,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -436,7 +433,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 0.0, 20.0),
                                 child: Text(
                                   'Day of the Week: ${ChurchGroupIDCall.day(
@@ -454,7 +451,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -463,7 +460,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 0.0, 20.0),
                                 child: Text(
                                   'Meeting Schedule: ${valueOrDefault<String>(
@@ -485,9 +482,9 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 20.0),
-                            child: Container(
+                            child: SizedBox(
                               width: double.infinity,
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -495,16 +492,16 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         5.0, 0.0, 0.0, 0.0),
                                     child: Container(
                                       height: 50.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: FutureBuilder<ApiCallResponse>(
                                         future:
                                             ChurchGroupMembersCountCall.call(
                                           authToken: currentAuthenticationToken,
-                                          churchgroupId: widget!.churchGroupID,
+                                          churchgroupId: widget.churchGroupID,
                                         ),
                                         builder: (context, snapshot) {
                                           // Customize what your widget looks like when it's loading.
@@ -552,7 +549,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                                                         ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         5.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -581,7 +578,7 @@ class _ChurchGroupIDWidgetState extends State<ChurchGroupIDWidget> {
                           ),
                           Container(
                             height: 120.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ],
                       ),

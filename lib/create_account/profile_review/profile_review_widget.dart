@@ -5,14 +5,9 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'profile_review_model.dart';
@@ -161,7 +156,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
               automaticallyImplyLeading: false,
               title: Container(
                 width: double.infinity,
-                decoration: BoxDecoration(),
+                decoration: const BoxDecoration(),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -208,7 +203,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -220,18 +215,18 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                 builder: (alertDialogContext) {
                                   return WebViewAware(
                                     child: AlertDialog(
-                                      title: Text(
+                                      title: const Text(
                                           'Are you sure you want to sign out?'),
                                       actions: [
                                         TextButton(
                                           onPressed: () => Navigator.pop(
                                               alertDialogContext, false),
-                                          child: Text('Cancel'),
+                                          child: const Text('Cancel'),
                                         ),
                                         TextButton(
                                           onPressed: () => Navigator.pop(
                                               alertDialogContext, true),
-                                          child: Text('Yes'),
+                                          child: const Text('Yes'),
                                         ),
                                       ],
                                     ),
@@ -259,7 +254,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                   ],
                 ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -281,9 +276,9 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                   ) ==
                                   true)
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 24.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -342,9 +337,9 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                   ) ==
                                   false)
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, -1.0),
+                                  alignment: const AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 24.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -369,10 +364,10 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(1.0, -1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 20.0, 20.0, 0.0),
                                             child: Text(
                                               '+',
@@ -393,9 +388,9 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                   ),
                                 ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 150.0, 0.0, 0.0),
                                   child: Container(
                                     width: 100.0,
@@ -415,7 +410,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                             false)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 4.0, 4.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -446,7 +441,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '+',
@@ -472,7 +467,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                             true)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 4.0, 4.0),
                                             child: ClipRRect(
                                               borderRadius:
@@ -503,7 +498,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
@@ -521,7 +516,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
@@ -545,7 +540,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -554,14 +549,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -572,12 +567,12 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                   BorderRadius.circular(0.0),
                                             ),
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
+                                                const AlignmentDirectional(-1.0, 0.0),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 10.0, 0.0, 10.0),
                                                 child: Text(
@@ -609,7 +604,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                             false)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 20.0, 10.0, 20.0),
                                             child: Container(
                                               width: double.infinity,
@@ -618,7 +613,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                     BorderRadius.circular(15.0),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: double.infinity,
@@ -637,14 +632,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                         'Add Personal Information',
                                                     options: FFButtonOptions(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
                                                                   16.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -667,7 +662,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                     0.0,
                                                               ),
                                                       elevation: 0.0,
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF06264C),
                                                       ),
@@ -691,7 +686,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                       ) ==
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: Container(
                                         width: double.infinity,
@@ -701,7 +696,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -915,13 +910,13 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -933,15 +928,15 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -974,7 +969,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 false)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: InkWell(
@@ -999,7 +994,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: double.infinity,
@@ -1021,14 +1016,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           options:
                                                               FFButtonOptions(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1052,7 +1047,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                     ),
                                                             elevation: 0.0,
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0xFF06264C),
                                                             ),
@@ -1075,7 +1070,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 true)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: Container(
@@ -1087,7 +1082,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
@@ -1098,7 +1093,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     0.0,
@@ -1136,13 +1131,13 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1154,15 +1149,15 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1189,7 +1184,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 10.0, 0.0),
                                               child: Column(
@@ -1197,7 +1192,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 10.0,
                                                                 20.0,
@@ -1212,7 +1207,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Container(
                                                           width:
@@ -1386,13 +1381,13 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1404,15 +1399,15 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1445,7 +1440,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 false)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: InkWell(
@@ -1470,7 +1465,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: double.infinity,
@@ -1492,14 +1487,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           options:
                                                               FFButtonOptions(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1523,7 +1518,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                     ),
                                                             elevation: 0.0,
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0xFF06264C),
                                                             ),
@@ -1546,7 +1541,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 true)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: Container(
@@ -1558,7 +1553,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -1655,13 +1650,13 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 200.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1673,15 +1668,15 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1714,10 +1709,10 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 false)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: Container(
@@ -1737,14 +1732,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           'Add Salvation Journey',
                                                       options: FFButtonOptions(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
                                                                     16.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -1767,7 +1762,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                       0.0,
                                                                 ),
                                                         elevation: 0.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFF06264C),
                                                         ),
@@ -1786,10 +1781,10 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 false)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: Container(
@@ -1809,14 +1804,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           'Add Salvation Journey',
                                                       options: FFButtonOptions(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
                                                                     16.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -1839,7 +1834,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                       0.0,
                                                                 ),
                                                         elevation: 0.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFF06264C),
                                                         ),
@@ -1858,10 +1853,10 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 false)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: Container(
@@ -1881,7 +1876,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           true,
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Text(
                                                           'Journey timeline will be available soon!',
@@ -1907,10 +1902,10 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                 ) ==
                                                 true)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: Container(
@@ -1933,22 +1928,22 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                     return WebViewAware(
                                                                       child:
                                                                           AlertDialog(
-                                                                        title: Text(
+                                                                        title: const Text(
                                                                             'Are you ready to submit your profile?'),
                                                                         content:
-                                                                            Text('Your Church Administrator will review and approve to join our church community.'),
+                                                                            const Text('Your Church Administrator will review and approve to join our church community.'),
                                                                         actions: [
                                                                           TextButton(
                                                                             onPressed: () =>
                                                                                 Navigator.pop(alertDialogContext, false),
                                                                             child:
-                                                                                Text('Cancel'),
+                                                                                const Text('Cancel'),
                                                                           ),
                                                                           TextButton(
                                                                             onPressed: () =>
                                                                                 Navigator.pop(alertDialogContext, true),
                                                                             child:
-                                                                                Text('Confirm'),
+                                                                                const Text('Confirm'),
                                                                           ),
                                                                         ],
                                                                       ),
@@ -1981,7 +1976,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                         .primaryText,
                                                                   ),
                                                                 ),
-                                                                duration: Duration(
+                                                                duration: const Duration(
                                                                     milliseconds:
                                                                         4000),
                                                                 backgroundColor:
@@ -2005,14 +2000,14 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                           'Submit to Church Administrator',
                                                       options: FFButtonOptions(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
                                                                     16.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -2036,7 +2031,7 @@ class _ProfileReviewWidgetState extends State<ProfileReviewWidget>
                                                                       0.0,
                                                                 ),
                                                         elevation: 0.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0xFF06264C),
                                                         ),

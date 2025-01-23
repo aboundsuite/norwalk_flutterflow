@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'empty_list_model.dart';
 export 'empty_list_model.dart';
 
@@ -39,16 +37,16 @@ class _EmptyListWidgetState extends State<EmptyListWidget> {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 0.0),
+      alignment: const AlignmentDirectional(0.0, 0.0),
       child: Container(
         width: 300.0,
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
               child: Icon(
                 Icons.notifications_none,
                 color: FlutterFlowTheme.of(context).secondaryText,
@@ -56,7 +54,7 @@ class _EmptyListWidgetState extends State<EmptyListWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
               child: Text(
                 'No Activity',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -69,7 +67,7 @@ class _EmptyListWidgetState extends State<EmptyListWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
               child: Text(
                 'It seems that you don\'t have any recent posts from Norwalk Baptist Church.',
                 textAlign: TextAlign.center,

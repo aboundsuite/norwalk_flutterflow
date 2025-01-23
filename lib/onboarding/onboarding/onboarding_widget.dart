@@ -1,13 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'onboarding_model.dart';
 export 'onboarding_model.dart';
@@ -53,21 +51,21 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500.0,
                   child: Stack(
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                         child: PageView(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
                           scrollDirection: Axis.horizontal,
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -75,7 +73,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: ClipRRect(
                                         borderRadius:
@@ -90,7 +88,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'A Note From Our Pastor',
@@ -107,7 +105,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 4.0, 12.0, 0.0),
                                     child: Text(
                                       'Welcome to Norwalk Baptist Church Official App! Explore our beliefs online and visit us in person soon. Pastor Rich Forman.',
@@ -125,7 +123,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -133,7 +131,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: ClipRRect(
                                         borderRadius:
@@ -148,7 +146,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Meet our Pastor',
@@ -165,7 +163,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 4.0, 12.0, 0.0),
                                     child: Text(
                                       'Pastor Richard Forman has led Norwalk Baptist since 2016, serving with his wife, Melissa, and 4 daughters.',
@@ -181,7 +179,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -189,7 +187,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: ClipRRect(
                                         borderRadius:
@@ -204,7 +202,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Know more about us!',
@@ -219,7 +217,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         36.0, 20.0, 36.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -313,9 +311,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 1.0),
+                        alignment: const AlignmentDirectional(0.0, 1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 10.0),
                           child: smooth_page_indicator.SmoothPageIndicator(
                             controller: _model.pageViewController ??=
@@ -325,7 +323,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                             onDotClicked: (i) async {
                               await _model.pageViewController!.animateToPage(
                                 i,
-                                duration: Duration(milliseconds: 500),
+                                duration: const Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                               safeSetState(() {});
@@ -350,7 +348,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(24.0),
+                padding: const EdgeInsets.all(24.0),
                 child: Wrap(
                   spacing: 16.0,
                   runSpacing: 16.0,
@@ -370,9 +368,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         width: 150.0,
                         height: 50.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -381,7 +379,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 2.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -397,9 +395,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         width: 150.0,
                         height: 50.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).secondary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -408,7 +406,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 2.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

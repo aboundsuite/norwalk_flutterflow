@@ -2,11 +2,8 @@ import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'devotion_i_d_model.dart';
 export 'devotion_i_d_model.dart';
 
@@ -45,7 +42,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetDevotionsIDCall.call(
         authToken: currentAuthenticationToken,
-        devotionsId: widget!.devotionsID,
+        devotionsId: widget.devotionsID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -75,14 +72,14 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
           child: Scaffold(
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            body: Container(
+            body: SizedBox(
               width: double.infinity,
               height: double.infinity,
               child: Stack(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Image.network(
                       GetDevotionsIDCall.image(
                         devotionIDGetDevotionsIDResponse.jsonBody,
@@ -93,10 +90,10 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, -0.87),
+                    alignment: const AlignmentDirectional(0.0, -0.87),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -115,7 +112,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                               onTap: () async {
                                 Navigator.pop(context);
                               },
-                              child: Icon(
+                              child: const Icon(
                                 Icons.close_outlined,
                                 color: Colors.white,
                                 size: 24.0,
@@ -128,16 +125,16 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.0),
+                            alignment: const AlignmentDirectional(0.0, 1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 200.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -145,7 +142,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 4.0,
                                       color: Color(0x320E151B),
@@ -155,7 +152,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                                       ),
                                     )
                                   ],
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(0.0),
                                     bottomRight: Radius.circular(0.0),
                                     topLeft: Radius.circular(16.0),
@@ -163,7 +160,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 12.0, 20.0, 20.0),
                                   child: SingleChildScrollView(
                                     primary: false,
@@ -233,7 +230,7 @@ class _DevotionIDWidgetState extends State<DevotionIDWidget> {
                                                 ],
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 50.0),
                                                 child: Text(

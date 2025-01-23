@@ -5,10 +5,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'profile_image_change_model.dart';
 export 'profile_image_change_model.dart';
@@ -74,28 +72,28 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(100.0),
+              preferredSize: const Size.fromHeight(100.0),
               child: AppBar(
                 backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
                 automaticallyImplyLeading: false,
-                actions: [],
+                actions: const [],
                 flexibleSpace: FlexibleSpaceBar(
                   title: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 8.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: FlutterFlowIconButton(
                                   borderColor: Colors.transparent,
@@ -167,9 +165,9 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(1.0, 1.0),
+                              alignment: const AlignmentDirectional(1.0, 1.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 223.0, 20.0, 0.0),
                                 child: Container(
                                   width: 50.0,
@@ -245,10 +243,10 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.05),
+                    alignment: const AlignmentDirectional(0.0, 0.05),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           _model.userProfilePhotoUpdated =
@@ -266,13 +264,13 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
                               builder: (alertDialogContext) {
                                 return WebViewAware(
                                   child: AlertDialog(
-                                    title: Text('Uploading Error'),
-                                    content: Text('Please try again.'),
+                                    title: const Text('Uploading Error'),
+                                    content: const Text('Please try again.'),
                                     actions: [
                                       TextButton(
                                         onPressed: () =>
                                             Navigator.pop(alertDialogContext),
-                                        child: Text('Ok'),
+                                        child: const Text('Ok'),
                                       ),
                                     ],
                                   ),
@@ -287,9 +285,9 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
                         options: FFButtonOptions(
                           width: 270.0,
                           height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).secondary,
                           textStyle:
@@ -299,7 +297,7 @@ class _ProfileImageChangeWidgetState extends State<ProfileImageChangeWidget> {
                                     letterSpacing: 0.0,
                                   ),
                           elevation: 2.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),

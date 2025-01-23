@@ -5,14 +5,9 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'profile_dashboard_model.dart';
 export 'profile_dashboard_model.dart';
@@ -172,7 +167,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                         child: Text(
                           'My Profile',
                           style: FlutterFlowTheme.of(context)
@@ -208,7 +203,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -231,9 +226,9 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                   ) ==
                                   true)
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 24.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -293,9 +288,9 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                   ) ==
                                   false)
                                 Align(
-                                  alignment: AlignmentDirectional(1.0, -1.0),
+                                  alignment: const AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         24.0, 12.0, 24.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -320,10 +315,10 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(1.0, -1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 20.0, 20.0, 0.0),
                                             child: Text(
                                               '+',
@@ -344,9 +339,9 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                   ),
                                 ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 150.0, 0.0, 0.0),
                                   child: Container(
                                     width: 100.0,
@@ -366,7 +361,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                             false)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 4.0, 4.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
@@ -397,7 +392,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Text(
                                                     '+',
@@ -423,7 +418,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                             true)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 4.0, 4.0),
                                             child: ClipRRect(
                                               borderRadius:
@@ -454,7 +449,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
@@ -472,7 +467,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
@@ -496,7 +491,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -505,14 +500,14 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 10.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, 0.0),
+                                              const AlignmentDirectional(-1.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -523,12 +518,12 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                   BorderRadius.circular(0.0),
                                             ),
                                             alignment:
-                                                AlignmentDirectional(-1.0, 0.0),
+                                                const AlignmentDirectional(-1.0, 0.0),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 10.0, 0.0, 10.0),
                                                 child: Text(
@@ -560,7 +555,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                             false)
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 20.0, 10.0, 20.0),
                                             child: Container(
                                               width: double.infinity,
@@ -569,7 +564,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                     BorderRadius.circular(15.0),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Container(
                                                   width: double.infinity,
@@ -588,14 +583,14 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                         'Add Personal Information',
                                                     options: FFButtonOptions(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
                                                                   16.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -618,7 +613,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                                     0.0,
                                                               ),
                                                       elevation: 0.0,
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0xFF06264C),
                                                       ),
@@ -642,7 +637,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                       ) ==
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: Container(
                                         width: double.infinity,
@@ -652,7 +647,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -866,13 +861,13 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -884,15 +879,15 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -925,7 +920,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 false)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: InkWell(
@@ -950,7 +945,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: double.infinity,
@@ -972,14 +967,14 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                           options:
                                                               FFButtonOptions(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1003,7 +998,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                                     ),
                                                             elevation: 0.0,
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0xFF06264C),
                                                             ),
@@ -1026,7 +1021,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 true)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: Container(
@@ -1038,7 +1033,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                   ),
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Container(
                                                       width: double.infinity,
@@ -1049,7 +1044,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     0.0,
@@ -1087,13 +1082,13 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1105,15 +1100,15 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1140,7 +1135,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 10.0, 0.0),
                                               child: Column(
@@ -1148,7 +1143,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 10.0,
                                                                 20.0,
@@ -1163,7 +1158,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Container(
                                                           width:
@@ -1337,13 +1332,13 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1355,15 +1350,15 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1396,7 +1391,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 false)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: InkWell(
@@ -1421,7 +1416,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                     ),
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Container(
                                                         width: double.infinity,
@@ -1443,14 +1438,14 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                           options:
                                                               FFButtonOptions(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1474,7 +1469,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                                     ),
                                                             elevation: 0.0,
                                                             borderSide:
-                                                                BorderSide(
+                                                                const BorderSide(
                                                               color: Color(
                                                                   0xFF06264C),
                                                             ),
@@ -1497,7 +1492,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 true)
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 20.0, 10.0, 20.0),
                                                 child: Container(
@@ -1509,7 +1504,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -1602,13 +1597,13 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 200.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
@@ -1620,15 +1615,15 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                       BorderRadius.circular(
                                                           0.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           -1.0, -1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(
                                                                 20.0,
                                                                 10.0,
@@ -1661,10 +1656,10 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 false)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: InkWell(
@@ -1698,14 +1693,14 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                         options:
                                                             FFButtonOptions(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
                                                                       16.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1729,7 +1724,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                                   ),
                                                           elevation: 0.0,
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Color(
                                                                 0xFF06264C),
                                                           ),
@@ -1750,10 +1745,10 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                 ) ==
                                                 true)
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(10.0, 20.0,
                                                           10.0, 0.0),
                                                   child: Container(
@@ -1773,7 +1768,7 @@ class _ProfileDashboardWidgetState extends State<ProfileDashboardWidget>
                                                           true,
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Text(
                                                           'Journey timeline will be available soon!',

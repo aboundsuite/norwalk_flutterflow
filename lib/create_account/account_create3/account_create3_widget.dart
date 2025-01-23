@@ -5,13 +5,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'account_create3_model.dart';
 export 'account_create3_model.dart';
@@ -88,7 +85,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -105,9 +102,9 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(3.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(3.0, 0.0, 0.0, 0.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -115,7 +112,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Your Salvation Journey.',
@@ -137,34 +134,34 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
                                 topLeft: Radius.circular(0.0),
                                 topRight: Radius.circular(0.0),
                               ),
                             ),
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsets.all(32.0),
+                              padding: const EdgeInsets.all(32.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
                                             _model.fullNameTextController,
                                         focusNode: _model.fullNameFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.name],
+                                        autofillHints: const [AutofillHints.name],
                                         textCapitalization:
                                             TextCapitalization.words,
                                         obscureText: false,
@@ -237,16 +234,16 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
                                             _model.emailAddressTextController,
                                         focusNode: _model.emailAddressFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: 'Email',
@@ -319,9 +316,9 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 16.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -338,7 +335,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                                   letterSpacing: 0.0,
                                                 ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: MediaQuery.sizeOf(context)
                                                     .width *
                                                 0.73,
@@ -431,16 +428,16 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 370.0,
                                       child: TextFormField(
                                         controller:
                                             _model.passwordTextController,
                                         focusNode: _model.passwordFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.password],
+                                        autofillHints: const [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
                                           labelText: 'Password',
@@ -556,7 +553,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                         value: _model.agreetermsValue!,
                                         onChanged: (newValue) async {
                                           safeSetState(() => _model
-                                              .agreetermsValue = newValue!);
+                                              .agreetermsValue = newValue);
                                         },
                                         activeColor:
                                             FlutterFlowTheme.of(context)
@@ -591,7 +588,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                         onChanged: (newValue) async {
                                           safeSetState(() =>
                                               _model.agreecommunicationsValue =
-                                                  newValue!);
+                                                  newValue);
                                         },
                                         activeColor:
                                             FlutterFlowTheme.of(context)
@@ -608,7 +605,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                     ],
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -682,7 +679,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                             builder: (alertDialogContext) {
                                               return WebViewAware(
                                                 child: AlertDialog(
-                                                  title: Text(
+                                                  title: const Text(
                                                       'Please contact Church Administrator!'),
                                                   content: Text(getJsonField(
                                                     (_model.signup?.jsonBody ??
@@ -694,7 +691,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                                       onPressed: () =>
                                                           Navigator.pop(
                                                               alertDialogContext),
-                                                      child: Text('Ok'),
+                                                      child: const Text('Ok'),
                                                     ),
                                                   ],
                                                 ),
@@ -709,10 +706,10 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                       options: FFButtonOptions(
                                         width: 370.0,
                                         height: 60.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
@@ -726,7 +723,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                               letterSpacing: 0.0,
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),
@@ -738,9 +735,9 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
 
                                   // You will have to add an action on this rich text to go to your login page.
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 12.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -755,7 +752,7 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                                               MediaQuery.of(context).textScaler,
                                           text: TextSpan(
                                             children: [
-                                              TextSpan(
+                                              const TextSpan(
                                                 text:
                                                     'Already have an account? ',
                                                 style: TextStyle(),
@@ -806,13 +803,13 @@ class _AccountCreate3WidgetState extends State<AccountCreate3Widget> {
                 Expanded(
                   flex: 6,
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: 100.0,
                       height: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.cover,
                           image: CachedNetworkImageProvider(
                             'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1380&q=80',

@@ -1,14 +1,9 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'serve_model.dart';
 export 'serve_model.dart';
 
@@ -78,7 +73,7 @@ class _ServeWidgetState extends State<ServeWidget>
                 size: 24.0,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'My Dashboard',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -91,7 +86,7 @@ class _ServeWidgetState extends State<ServeWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -102,19 +97,19 @@ class _ServeWidgetState extends State<ServeWidget>
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Container(
                                 width: 150.0,
                                 height: 150.0,
@@ -123,13 +118,13 @@ class _ServeWidgetState extends State<ServeWidget>
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -139,7 +134,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                             width: 40.0,
                                             height: 40.0,
                                             fit: BoxFit.contain,
-                                            alignment: Alignment(0.0, 0.0),
+                                            alignment: const Alignment(0.0, 0.0),
                                           ),
                                         ),
                                       ),
@@ -161,7 +156,7 @@ class _ServeWidgetState extends State<ServeWidget>
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -171,7 +166,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                   context.pushNamed(
                                     'MyCheckIN',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -187,7 +182,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -195,7 +190,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 10.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -231,13 +226,13 @@ class _ServeWidgetState extends State<ServeWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -247,7 +242,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                   context.pushNamed(
                                     'MyPrayers',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -263,7 +258,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -271,7 +266,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 10.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -303,7 +298,7 @@ class _ServeWidgetState extends State<ServeWidget>
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -313,7 +308,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                   context.pushNamed(
                                     'MyPraises',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -329,7 +324,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -337,7 +332,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 10.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -347,7 +342,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                               width: 40.0,
                                               height: 40.0,
                                               fit: BoxFit.contain,
-                                              alignment: Alignment(0.0, 0.0),
+                                              alignment: const Alignment(0.0, 0.0),
                                             ),
                                           ),
                                         ),
@@ -374,13 +369,13 @@ class _ServeWidgetState extends State<ServeWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Container(
                                 width: 150.0,
                                 height: 150.0,
@@ -389,13 +384,13 @@ class _ServeWidgetState extends State<ServeWidget>
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 10.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -426,7 +421,7 @@ class _ServeWidgetState extends State<ServeWidget>
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -436,7 +431,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                   context.pushNamed(
                                     'MyTasks',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -452,7 +447,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
@@ -460,7 +455,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 10.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -470,7 +465,7 @@ class _ServeWidgetState extends State<ServeWidget>
                                               width: 40.0,
                                               height: 40.0,
                                               fit: BoxFit.contain,
-                                              alignment: Alignment(0.0, 0.0),
+                                              alignment: const Alignment(0.0, 0.0),
                                             ),
                                           ),
                                         ),

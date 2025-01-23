@@ -5,12 +5,10 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'prayer_list_copy_model.dart';
 export 'prayer_list_copy_model.dart';
 
@@ -73,7 +71,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -85,11 +83,11 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
             children: [
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -99,7 +97,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor: FlutterFlowTheme.of(context).primary,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
@@ -110,13 +108,13 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: 'Church Prayers',
                             ),
@@ -135,7 +133,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                           controller: _model.tabBarController,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 20.0, 0.0, 0.0),
                               child: FutureBuilder<ApiCallResponse>(
                                 future: (_model.apiRequestCompleter1 ??=
@@ -172,7 +170,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                         r'''$''',
                                       ).toList();
                                       if (prayerList.isEmpty) {
-                                        return EmptyListWidget();
+                                        return const EmptyListWidget();
                                       }
 
                                       return RefreshIndicator(
@@ -198,7 +196,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                             final prayerListItem =
                                                 prayerList[prayerListIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 20.0, 10.0),
                                               child: Container(
@@ -212,7 +210,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                           10.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 12.0),
                                                   child: Column(
@@ -226,11 +224,11 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, -1.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           8.0,
@@ -256,17 +254,17 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                               10.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           -1.0,
                                                                           -1.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -324,7 +322,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     10.0,
                                                                     0.0,
@@ -339,7 +337,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -388,7 +386,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                     height:
                                                                         50.0,
                                                                     decoration:
-                                                                        BoxDecoration(),
+                                                                        const BoxDecoration(),
                                                                     child: Row(
                                                                       mainAxisSize:
                                                                           MainAxisSize
@@ -410,7 +408,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                               ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               5.0,
                                                                               0.0,
                                                                               0.0,
@@ -482,7 +480,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                         ) ==
                                                                         false)
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             1.0,
                                                                             1.0),
                                                                         child:
@@ -514,12 +512,12 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 40.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 0.0,
                                                                                 16.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -546,7 +544,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                         ) ==
                                                                         true)
                                                                       Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             1.0,
                                                                             1.0),
                                                                         child:
@@ -569,12 +567,12 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                               FFButtonOptions(
                                                                             height:
                                                                                 40.0,
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 0.0,
                                                                                 16.0,
                                                                                 0.0),
-                                                                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -622,7 +620,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 20.0, 0.0, 0.0),
                                   child: FutureBuilder<ApiCallResponse>(
                                     future: (_model.apiRequestCompleter2 ??=
@@ -685,7 +683,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                     userPrayerList[
                                                         userPrayerListIndex];
                                                 return Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(20.0, 0.0, 20.0,
                                                           10.0),
                                                   child: Container(
@@ -700,7 +698,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                     ),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -717,11 +715,11 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         -1.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           8.0,
@@ -747,17 +745,17 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                               10.0),
                                                                     ),
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
                                                                         Align(
-                                                                      alignment: AlignmentDirectional(
+                                                                      alignment: const AlignmentDirectional(
                                                                           -1.0,
                                                                           -1.0),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             0.0,
                                                                             16.0,
@@ -807,7 +805,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -825,7 +823,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                   width: 50.0,
                                                                   height: 50.0,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                   child: Row(
                                                                     mainAxisSize:
                                                                         MainAxisSize
@@ -841,7 +839,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                             ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             5.0,
                                                                             0.0,
                                                                             0.0,
@@ -862,7 +860,7 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                 ),
                                                                 Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           1.0,
                                                                           1.0),
                                                                   child:
@@ -888,12 +886,12 @@ class _PrayerListCopyWidgetState extends State<PrayerListCopyWidget>
                                                                         FFButtonOptions(
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,

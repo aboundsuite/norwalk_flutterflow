@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/flutter_flow_youtube_player.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -76,12 +74,12 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                 Flexible(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,7 +115,7 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                 ),
               ],
             ),
-            actions: [],
+            actions: const [],
             centerTitle: false,
             elevation: 0.0,
           ),
@@ -126,7 +124,7 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                FlutterFlowYoutubePlayer(
+                const FlutterFlowYoutubePlayer(
                   url: 'https://www.youtube.com/watch?v=Imoxt9bQCJI',
                   autoPlay: false,
                   looping: true,
@@ -137,14 +135,14 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                         child: Text(
                           'Bro Gastrock brings a messages from God\'s Word live from Norwalk Baptist Church.  Please feel free to join us for worship on Sunday at 11:00am and 6:00pm for our Morning and Evening Services or Wednesdays at 7:00pm.',
                           style:
@@ -166,7 +164,7 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -200,12 +198,12 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 5.0, 0.0),
                                   child: Icon(
                                     Icons.mode_comment_outlined,
@@ -227,7 +225,7 @@ class _YoutubeDetailsWidgetState extends State<YoutubeDetailsWidget> {
                             ),
                           ),
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [

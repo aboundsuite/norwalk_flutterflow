@@ -2,10 +2,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_create2_model.dart';
 export 'account_create2_model.dart';
 
@@ -66,7 +64,7 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -82,7 +80,7 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -93,16 +91,16 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(0.0),
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 0.0, 32.0, 0.0),
                             child: Text(
                               'Create Your Profile and Help Us Serve You Better!\n\nHi there! We’re so glad you’re part of our community. To make sure we can support you and your family in the best way possible, please take a few moments to complete your profile.\n\nBy sharing a little more about yourself, you’ll help us:\n\n - Stay connected by updating you on events, groups, and resources that match your interests.\n\n - Support your needs by helping our ministry team understand how to serve you better.\n\n - Build meaningful relationships with others by connecting with groups and activities you care about.\n\nThis quick setup will make a big difference! Thank you for helping us grow together as a church family.',
@@ -120,7 +118,7 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 16.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -130,9 +128,9 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
                             options: FFButtonOptions(
                               width: 370.0,
                               height: 60.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -144,7 +142,7 @@ class _AccountCreate2WidgetState extends State<AccountCreate2Widget> {
                                     letterSpacing: 0.0,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

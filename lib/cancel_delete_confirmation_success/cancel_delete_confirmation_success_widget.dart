@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'cancel_delete_confirmation_success_model.dart';
 export 'cancel_delete_confirmation_success_model.dart';
 
@@ -54,14 +51,14 @@ class _CancelDeleteConfirmationSuccessWidgetState
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(24.0),
+                  padding: const EdgeInsets.all(24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
@@ -78,7 +75,7 @@ class _CancelDeleteConfirmationSuccessWidgetState
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text:
                                     'You have successfully cancelled the deletion request. Thank you for staying with us.',
                                 style: TextStyle(),
@@ -96,7 +93,7 @@ class _CancelDeleteConfirmationSuccessWidgetState
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 24.0, 20.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
@@ -106,9 +103,9 @@ class _CancelDeleteConfirmationSuccessWidgetState
                           options: FFButtonOptions(
                             width: MediaQuery.sizeOf(context).width * 1.0,
                             height: 60.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).secondary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -120,7 +117,7 @@ class _CancelDeleteConfirmationSuccessWidgetState
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

@@ -4,12 +4,9 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_groups_model.dart';
 export 'add_groups_model.dart';
 
@@ -80,7 +77,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -91,7 +88,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: FutureBuilder<ApiCallResponse>(
                     future: (_model.apiRequestCompleter ??=
                             Completer<ApiCallResponse>()
@@ -123,7 +120,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                             r'''$''',
                           ).toList();
                           if (churchGroup.isEmpty) {
-                            return EmptyListWidget();
+                            return const EmptyListWidget();
                           }
 
                           return RefreshIndicator(
@@ -145,7 +142,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                 final churchGroupItem =
                                     churchGroup[churchGroupIndex];
                                 return Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
                                     focusColor: Colors.transparent,
@@ -171,13 +168,13 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
                                       ),
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -187,10 +184,10 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                                 CrossAxisAlignment.center,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           10.0, 0.0, 10.0, 0.0),
                                                   child: Container(
@@ -205,7 +202,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                                     ),
                                                     child: Stack(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       children: [
                                                         ClipRRect(
@@ -223,7 +220,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -289,7 +286,7 @@ class _AddGroupsWidgetState extends State<AddGroupsWidget> {
                                                                       children: [
                                                                         Padding(
                                                                           padding:
-                                                                              EdgeInsets.all(15.0),
+                                                                              const EdgeInsets.all(15.0),
                                                                           child:
                                                                               Text(
                                                                             getJsonField(

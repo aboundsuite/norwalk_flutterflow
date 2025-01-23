@@ -2,12 +2,9 @@ import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'get_prayer_i_d_model.dart';
 export 'get_prayer_i_d_model.dart';
@@ -47,7 +44,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetUSerPrayerIDCall.call(
         authToken: currentAuthenticationToken,
-        userprayerId: widget!.userPrayerID,
+        userprayerId: widget.userPrayerID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -84,20 +81,20 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                       builder: (alertDialogContext) {
                         return WebViewAware(
                           child: AlertDialog(
-                            title: Text(
+                            title: const Text(
                                 'Share this prayer request with the Church?'),
-                            content: Text(
+                            content: const Text(
                                 'By sharing, church admin will instantly be notified and share it with the church on bulletin for others to pray for you.'),
                             actions: [
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext, false),
-                                child: Text('Cancel'),
+                                child: const Text('Cancel'),
                               ),
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext, true),
-                                child: Text('Confirm'),
+                                child: const Text('Confirm'),
                               ),
                             ],
                           ),
@@ -110,7 +107,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                       await SharePrayerWithCHurchCall.call(
                     authToken: currentAuthenticationToken,
                     churchId: FFAppConstants.churchID,
-                    prayerId: widget!.userPrayerID,
+                    prayerId: widget.userPrayerID,
                   );
 
                   if ((_model.sharedwithChurch?.succeeded ?? true)) {
@@ -121,7 +118,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                       builder: (alertDialogContext) {
                         return WebViewAware(
                           child: AlertDialog(
-                            title: Text('There is an error'),
+                            title: const Text('There is an error'),
                             content: Text(getJsonField(
                               getPrayerIDGetUSerPrayerIDResponse.jsonBody,
                               r'''$.message''',
@@ -130,7 +127,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext),
-                                child: Text('Ok'),
+                                child: const Text('Ok'),
                               ),
                             ],
                           ),
@@ -163,21 +160,21 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                   Container(
                     width: double.infinity,
                     height: MediaQuery.sizeOf(context).height * 1.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1.0, -1.0),
+                    alignment: const AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 20.0),
                             child: Text(
                               dateTimeFormat(
@@ -205,9 +202,9 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 200.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -231,9 +228,9 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -264,9 +261,9 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.95, -1.02),
+                        alignment: const AlignmentDirectional(-0.95, -1.02),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 60.0, 0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -285,9 +282,9 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.95, -1.02),
+                        alignment: const AlignmentDirectional(-0.95, -1.02),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 60.0, 20.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -301,9 +298,9 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                                         builder: (alertDialogContext) {
                                           return WebViewAware(
                                             child: AlertDialog(
-                                              title: Text(
+                                              title: const Text(
                                                   'Do you want to delete this prayer?'),
-                                              content: Text(
+                                              content: const Text(
                                                   'This is will permanently delete the prayer.'),
                                               actions: [
                                                 TextButton(
@@ -311,14 +308,14 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                                                       Navigator.pop(
                                                           alertDialogContext,
                                                           false),
-                                                  child: Text('Cancel'),
+                                                  child: const Text('Cancel'),
                                                 ),
                                                 TextButton(
                                                   onPressed: () =>
                                                       Navigator.pop(
                                                           alertDialogContext,
                                                           true),
-                                                  child: Text('Confirm'),
+                                                  child: const Text('Confirm'),
                                                 ),
                                               ],
                                             ),
@@ -343,7 +340,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                                     builder: (alertDialogContext) {
                                       return WebViewAware(
                                         child: AlertDialog(
-                                          title: Text('There is an error!!!'),
+                                          title: const Text('There is an error!!!'),
                                           content: Text(getJsonField(
                                             (_model.deletePrayer?.jsonBody ??
                                                 ''),
@@ -353,7 +350,7 @@ class _GetPrayerIDWidgetState extends State<GetPrayerIDWidget> {
                                             TextButton(
                                               onPressed: () => Navigator.pop(
                                                   alertDialogContext),
-                                              child: Text('Ok'),
+                                              child: const Text('Ok'),
                                             ),
                                           ],
                                         ),

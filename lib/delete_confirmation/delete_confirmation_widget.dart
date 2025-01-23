@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'delete_confirmation_model.dart';
 export 'delete_confirmation_model.dart';
@@ -50,14 +47,14 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100.0),
+          preferredSize: const Size.fromHeight(100.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -65,12 +62,12 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -118,14 +115,14 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(24.0),
+                  padding: const EdgeInsets.all(24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
@@ -144,11 +141,11 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: '\n',
                                 style: TextStyle(),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text:
                                     'You have scheduled this account for deletion in 30 days.  A confirmation email will be sent to your registered email (please do check in spam folder if you don\'t see it in  your inbox.)\n\nYou can cancel it any time.',
                                 style: TextStyle(),
@@ -167,7 +164,7 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             var confirmDialogResponse = await showDialog<bool>(
@@ -175,20 +172,20 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                                   builder: (alertDialogContext) {
                                     return WebViewAware(
                                       child: AlertDialog(
-                                        title: Text(
+                                        title: const Text(
                                             'Cancel the Deletion request?'),
-                                        content: Text(
+                                        content: const Text(
                                             'By cancelling, you agree to continue to use A Church App and your account will stay active.'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext, false),
-                                            child: Text('Cancel'),
+                                            child: const Text('Cancel'),
                                           ),
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext, true),
-                                            child: Text('Confirm'),
+                                            child: const Text('Confirm'),
                                           ),
                                         ],
                                       ),
@@ -211,7 +208,7 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                                   builder: (alertDialogContext) {
                                     return WebViewAware(
                                       child: AlertDialog(
-                                        title: Text('Error'),
+                                        title: const Text('Error'),
                                         content: Text(getJsonField(
                                           (_model.cancelDelete?.jsonBody ?? ''),
                                           r'''$.message''',
@@ -220,7 +217,7 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       ),
@@ -238,9 +235,9 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                           options: FFButtonOptions(
                             width: MediaQuery.sizeOf(context).width * 1.0,
                             height: 60.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).secondary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -252,7 +249,7 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -265,7 +262,7 @@ class _DeleteConfirmationWidgetState extends State<DeleteConfirmationWidget> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,

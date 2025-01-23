@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'delete_account_model.dart';
 export 'delete_account_model.dart';
@@ -49,14 +46,14 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100.0),
+          preferredSize: const Size.fromHeight(100.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -64,12 +61,12 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -117,14 +114,14 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(24.0),
+                  padding: const EdgeInsets.all(24.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
@@ -173,7 +170,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                   'Work Sans',
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'Final Confirmation: ',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -207,7 +204,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text:
                                     'Once the account is deleted, you will not be able to retrieve any of your data.\n\nIf your account remains in the scheduled deletion phase without cancellation for the full 30 days, all personal information will be permanently erased in compliance with privacy regulations.\n\nBy using the Scheduled Deletion feature, you can take your time to decide without worry. \n\nWe\'re here to keep your options open and respect your decisions.',
                                 style: TextStyle(),
@@ -225,7 +222,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             var confirmDialogResponse = await showDialog<bool>(
@@ -233,19 +230,19 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                   builder: (alertDialogContext) {
                                     return WebViewAware(
                                       child: AlertDialog(
-                                        title: Text('Schedule for Deletion?'),
-                                        content: Text(
+                                        title: const Text('Schedule for Deletion?'),
+                                        content: const Text(
                                             'By proceeding with a yes, you are confirming to schedule your account for deletion. This is an irreversible action.'),
                                         actions: [
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext, false),
-                                            child: Text('Cancel'),
+                                            child: const Text('Cancel'),
                                           ),
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext, true),
-                                            child: Text('Confirm'),
+                                            child: const Text('Confirm'),
                                           ),
                                         ],
                                       ),
@@ -267,7 +264,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                   builder: (alertDialogContext) {
                                     return WebViewAware(
                                       child: AlertDialog(
-                                        title: Text('Error!!!'),
+                                        title: const Text('Error!!!'),
                                         content: Text(getJsonField(
                                           (_model.deleteAccount?.jsonBody ??
                                               ''),
@@ -277,7 +274,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       ),
@@ -295,9 +292,9 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                           options: FFButtonOptions(
                             width: MediaQuery.sizeOf(context).width * 1.0,
                             height: 60.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).error,
                             textStyle: FlutterFlowTheme.of(context)
@@ -309,7 +306,7 @@ class _DeleteAccountWidgetState extends State<DeleteAccountWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

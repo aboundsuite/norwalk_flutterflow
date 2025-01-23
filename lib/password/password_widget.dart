@@ -4,10 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'password_model.dart';
 export 'password_model.dart';
@@ -73,24 +71,24 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
-                      padding: EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -102,15 +100,15 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Padding(
-                            padding: EdgeInsets.all(24.0),
+                            padding: const EdgeInsets.all(24.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 50.0),
                                   child: Text(
                                     'Change Password',
@@ -124,7 +122,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 12.0, 0.0, 24.0),
                                   child: Text(
                                     'Enter your new password below.',
@@ -138,7 +136,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
                                   child: TextFormField(
                                     controller: _model.textController,
@@ -163,7 +161,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                             BorderRadius.circular(15.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -171,7 +169,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                             BorderRadius.circular(15.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -179,14 +177,14 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                             BorderRadius.circular(15.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(15.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(24.0),
+                                      contentPadding: const EdgeInsets.all(24.0),
                                       suffixIcon: InkWell(
                                         onTap: () => safeSetState(
                                           () => _model.passwordVisibility =
@@ -215,7 +213,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -232,13 +230,13 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                           builder: (alertDialogContext) {
                                             return WebViewAware(
                                               child: AlertDialog(
-                                                title: Text('Password Changed'),
+                                                title: const Text('Password Changed'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               ),
@@ -253,7 +251,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                           builder: (alertDialogContext) {
                                             return WebViewAware(
                                               child: AlertDialog(
-                                                title: Text(
+                                                title: const Text(
                                                     'You have an error!!!'),
                                                 content: Text(getJsonField(
                                                   (_model.passwordChanged
@@ -266,7 +264,7 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               ),
@@ -281,10 +279,10 @@ class _PasswordWidgetState extends State<PasswordWidget> {
                                     options: FFButtonOptions(
                                       width: 370.0,
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color: FlutterFlowTheme.of(context)
                                           .secondary,

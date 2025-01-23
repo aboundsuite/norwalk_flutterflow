@@ -4,12 +4,9 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'praises_list_model.dart';
 export 'praises_list_model.dart';
 
@@ -79,7 +76,7 @@ class _PraisesListWidgetState extends State<PraisesListWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -120,7 +117,7 @@ class _PraisesListWidgetState extends State<PraisesListWidget> {
                         r'''$''',
                       ).toList();
                       if (praisesList.isEmpty) {
-                        return EmptyListWidget();
+                        return const EmptyListWidget();
                       }
 
                       return RefreshIndicator(
@@ -146,7 +143,7 @@ class _PraisesListWidgetState extends State<PraisesListWidget> {
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -156,10 +153,10 @@ class _PraisesListWidgetState extends State<PraisesListWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 8.0, 16.0, 12.0),
                                             child: Container(
                                               width: double.infinity,
@@ -173,13 +170,13 @@ class _PraisesListWidgetState extends State<PraisesListWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(10.0),
                                               ),
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     -1.0, -1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 4.0),
                                                   child: Column(

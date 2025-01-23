@@ -4,13 +4,9 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'my_prayers_model.dart';
 export 'my_prayers_model.dart';
 
@@ -89,7 +85,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'My Prayers',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -102,7 +98,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -112,19 +108,19 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
                 child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                 ),
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -134,7 +130,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor: FlutterFlowTheme.of(context).primary,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
@@ -145,13 +141,13 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: 'My Prayers',
                             ),
@@ -178,7 +174,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         20.0, 10.0, 20.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
@@ -189,7 +185,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                             BorderRadius.circular(10.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             10.0, 20.0, 10.0, 20.0),
                                         child: Text(
                                           'Personal Prayer list. Only visible to you, unless you share it with the church as a prayer request.',
@@ -207,7 +203,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: FutureBuilder<ApiCallResponse>(
                                       future: (_model.apiRequestCompleter1 ??=
@@ -274,7 +270,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                           userPrayerListIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 20.0, 10.0),
                                                     child: InkWell(
@@ -312,11 +308,11 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                                       10.0),
                                                         ),
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
                                                                       0.0,
@@ -358,7 +354,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: FutureBuilder<ApiCallResponse>(
                                       future: (_model.apiRequestCompleter2 ??=
@@ -427,7 +423,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                           userPrayerListIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(20.0, 0.0,
                                                                 20.0, 0.0),
                                                     child: InkWell(
@@ -458,13 +454,13 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                         width: 100.0,
                                                         height: 60.0,
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       10.0,
                                                                       0.0,
@@ -538,7 +534,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                           r'''$''',
                                         ).toList();
                                         if (prayerList.isEmpty) {
-                                          return EmptyListWidget();
+                                          return const EmptyListWidget();
                                         }
 
                                         return RefreshIndicator(
@@ -564,7 +560,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                               final prayerListItem =
                                                   prayerList[prayerListIndex];
                                               return Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 10.0, 20.0, 0.0),
                                                 child: Container(
@@ -576,7 +572,7 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 12.0),
                                                     child: Column(
@@ -590,11 +586,11 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       -1.0,
                                                                       -1.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         8.0,
@@ -620,17 +616,17 @@ class _MyPrayersWidgetState extends State<MyPrayersWidget>
                                                                             10.0),
                                                                   ),
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             -1.0,
                                                                             -1.0),
                                                                     child:
                                                                         Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           16.0,

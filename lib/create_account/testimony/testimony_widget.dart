@@ -4,10 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'testimony_model.dart';
 export 'testimony_model.dart';
@@ -72,23 +70,23 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Padding(
-              padding: EdgeInsets.all(32.0),
+              padding: const EdgeInsets.all(32.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                     child: Text(
                       'Write a brief testimony.',
                       style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -102,8 +100,8 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 20.0),
-                    child: Container(
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 20.0),
+                    child: SizedBox(
                       width: double.infinity,
                       child: TextFormField(
                         controller: _model.textController,
@@ -124,14 +122,14 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                                     letterSpacing: 0.0,
                                   ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
@@ -170,7 +168,7 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.profileCompleted =
@@ -187,7 +185,7 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                             builder: (alertDialogContext) {
                               return WebViewAware(
                                 child: AlertDialog(
-                                  title: Text('Please try again!!!'),
+                                  title: const Text('Please try again!!!'),
                                   content: Text(getJsonField(
                                     (_model.profileCompleted?.jsonBody ?? ''),
                                     r'''$.message''',
@@ -196,7 +194,7 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                                     TextButton(
                                       onPressed: () =>
                                           Navigator.pop(alertDialogContext),
-                                      child: Text('Ok'),
+                                      child: const Text('Ok'),
                                     ),
                                   ],
                                 ),
@@ -212,9 +210,9 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                         width: 370.0,
                         height: 60.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -223,7 +221,7 @@ class _TestimonyWidgetState extends State<TestimonyWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

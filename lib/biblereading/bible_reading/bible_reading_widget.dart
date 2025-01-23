@@ -2,11 +2,8 @@ import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'bible_reading_model.dart';
 export 'bible_reading_model.dart';
 
@@ -45,7 +42,7 @@ class _BibleReadingWidgetState extends State<BibleReadingWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetBibleReadingIDCall.call(
         authToken: currentAuthenticationToken,
-        bibleReadingId: widget!.bibleReadingID,
+        bibleReadingId: widget.bibleReadingID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -105,16 +102,16 @@ class _BibleReadingWidgetState extends State<BibleReadingWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 200.0),
                             child: Text(
                               dateTimeFormat(
@@ -142,9 +139,9 @@ class _BibleReadingWidgetState extends State<BibleReadingWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 20.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -167,9 +164,9 @@ class _BibleReadingWidgetState extends State<BibleReadingWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -196,10 +193,10 @@ class _BibleReadingWidgetState extends State<BibleReadingWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.95, -1.02),
+                    alignment: const AlignmentDirectional(-0.95, -1.02),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 0.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,

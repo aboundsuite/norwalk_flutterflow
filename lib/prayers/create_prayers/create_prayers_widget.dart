@@ -4,10 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'create_prayers_model.dart';
 export 'create_prayers_model.dart';
@@ -84,21 +82,21 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 15.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -106,8 +104,8 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                        child: Container(
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                        child: SizedBox(
                           width: 200.0,
                           child: TextFormField(
                             controller: _model.textController1,
@@ -130,14 +128,14 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -185,7 +183,7 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Container(
+                        SizedBox(
                           width: double.infinity,
                           child: TextFormField(
                             controller: _model.prayerDecscrTextController,
@@ -208,14 +206,14 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Color(0x00000000),
                                   width: 1.0,
                                 ),
@@ -260,7 +258,7 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.userPrayerCreated =
@@ -277,7 +275,7 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                           context.pushNamed(
                             'MyPrayers',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.bottomToTop,
                               ),
@@ -291,7 +289,7 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                             builder: (alertDialogContext) {
                               return WebViewAware(
                                 child: AlertDialog(
-                                  title: Text('There is an error!!!'),
+                                  title: const Text('There is an error!!!'),
                                   content: Text(getJsonField(
                                     (_model.userPrayerCreated?.jsonBody ?? ''),
                                     r'''$.message''',
@@ -300,7 +298,7 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                                     TextButton(
                                       onPressed: () =>
                                           Navigator.pop(alertDialogContext),
-                                      child: Text('Ok'),
+                                      child: const Text('Ok'),
                                     ),
                                   ],
                                 ),
@@ -315,10 +313,10 @@ class _CreatePrayersWidgetState extends State<CreatePrayersWidget> {
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 60.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(

@@ -2,12 +2,9 @@ import '/auth/custom_auth/auth_util.dart';
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'get_praise_i_d_model.dart';
 export 'get_praise_i_d_model.dart';
@@ -47,7 +44,7 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetUSerPrayerIDCall.call(
         authToken: currentAuthenticationToken,
-        userprayerId: widget!.userPrayerID,
+        userprayerId: widget.userPrayerID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -84,20 +81,20 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                       builder: (alertDialogContext) {
                         return WebViewAware(
                           child: AlertDialog(
-                            title: Text(
+                            title: const Text(
                                 'Share this prayer request with the Church?'),
-                            content: Text(
+                            content: const Text(
                                 'By sharing, church admin will instantly be notified and share it with the church on bulletin for others to pray for you.'),
                             actions: [
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext, false),
-                                child: Text('Cancel'),
+                                child: const Text('Cancel'),
                               ),
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext, true),
-                                child: Text('Confirm'),
+                                child: const Text('Confirm'),
                               ),
                             ],
                           ),
@@ -110,7 +107,7 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                       await SharePrayerWithCHurchCall.call(
                     authToken: currentAuthenticationToken,
                     churchId: FFAppConstants.churchID,
-                    prayerId: widget!.userPrayerID,
+                    prayerId: widget.userPrayerID,
                   );
 
                   if ((_model.sharedwithChurch?.succeeded ?? true)) {
@@ -121,7 +118,7 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                       builder: (alertDialogContext) {
                         return WebViewAware(
                           child: AlertDialog(
-                            title: Text('There is an error'),
+                            title: const Text('There is an error'),
                             content: Text(getJsonField(
                               getPraiseIDGetUSerPrayerIDResponse.jsonBody,
                               r'''$.message''',
@@ -130,7 +127,7 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                               TextButton(
                                 onPressed: () =>
                                     Navigator.pop(alertDialogContext),
-                                child: Text('Ok'),
+                                child: const Text('Ok'),
                               ),
                             ],
                           ),
@@ -168,16 +165,16 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 200.0),
                             child: Text(
                               dateTimeFormat(
@@ -204,9 +201,9 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 20.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -228,9 +225,9 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 0.0, 20.0, 0.0),
                               child: Text(
                                 valueOrDefault<String>(
@@ -256,10 +253,10 @@ class _GetPraiseIDWidgetState extends State<GetPraiseIDWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-0.95, -1.02),
+                    alignment: const AlignmentDirectional(-0.95, -1.02),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 60.0, 0.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,

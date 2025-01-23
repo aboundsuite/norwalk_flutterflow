@@ -3,12 +3,9 @@ import '/backend/api_requests/api_calls.dart';
 import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'meal_talk_model.dart';
 export 'meal_talk_model.dart';
 
@@ -68,7 +65,7 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'MealTalk',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -81,7 +78,7 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -91,19 +88,19 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
                 child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: SingleChildScrollView(
                       primary: false,
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: FutureBuilder<ApiCallResponse>(
                               future: (_model.apiRequestCompleter ??=
@@ -139,7 +136,7 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                                       r'''$''',
                                     ).toList();
                                     if (mealTalkActive.isEmpty) {
-                                      return EmptyListWidget();
+                                      return const EmptyListWidget();
                                     }
 
                                     return RefreshIndicator(
@@ -166,9 +163,9 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                                                   mealTalkActiveIndex];
                                           return Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 10.0, 10.0),
                                               child: Container(
@@ -182,20 +179,20 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                                                       BorderRadius.circular(
                                                           15.0),
                                                 ),
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
@@ -210,7 +207,7 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                                                           children: [
                                                             Align(
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Container(
                                                                 decoration:
@@ -225,13 +222,13 @@ class _MealTalkWidgetState extends State<MealTalkWidget> {
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             15.0),
                                                                     child: Text(
                                                                       getJsonField(

@@ -3,11 +3,8 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'event_details_model.dart';
 export 'event_details_model.dart';
 
@@ -46,7 +43,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetEventByIDCall.call(
         authToken: currentAuthenticationToken,
-        eventId: widget!.eventID,
+        eventId: widget.eventID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -87,7 +84,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                     borderRadius: 30.0,
                     borderWidth: 1.0,
                     buttonSize: 60.0,
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.chevron_left_sharp,
                       color: Color(0xFF101213),
                       size: 30.0,
@@ -98,7 +95,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 0.0,
             ),
@@ -114,11 +111,11 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 16.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
-                              constraints: BoxConstraints(
+                              constraints: const BoxConstraints(
                                 maxWidth: 570.0,
                               ),
                               decoration: BoxDecoration(
@@ -126,14 +123,14 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Text(
                                         valueOrDefault<String>(
@@ -148,7 +145,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                             .override(
                                               font:
                                                   GoogleFonts.plusJakartaSans(),
-                                              color: Color(0xFF101213),
+                                              color: const Color(0xFF101213),
                                               fontSize: 24.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -156,7 +153,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsets.all(2.0),
+                                      padding: const EdgeInsets.all(2.0),
                                       child: ClipRRect(
                                         borderRadius:
                                             BorderRadius.circular(10.0),
@@ -178,7 +175,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -215,7 +212,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 4.0, 0.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
@@ -253,7 +250,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 12.0),
                                       child: Text(
                                         valueOrDefault<String>(
@@ -268,7 +265,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                             .override(
                                               font:
                                                   GoogleFonts.plusJakartaSans(),
-                                              color: Color(0xFF57636C),
+                                              color: const Color(0xFF57636C),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -276,11 +273,11 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Container(
                                         width: double.infinity,
-                                        constraints: BoxConstraints(
+                                        constraints: const BoxConstraints(
                                           maxWidth: 570.0,
                                         ),
                                         decoration: BoxDecoration(
@@ -288,19 +285,19 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                           borderRadius:
                                               BorderRadius.circular(12.0),
                                           border: Border.all(
-                                            color: Color(0xFFE0E3E7),
+                                            color: const Color(0xFFE0E3E7),
                                             width: 1.0,
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(16.0),
+                                          padding: const EdgeInsets.all(16.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 16.0, 4.0),
                                                 child: Text(
@@ -312,7 +309,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                                         font: GoogleFonts
                                                             .plusJakartaSans(),
                                                         color:
-                                                            Color(0xFF57636C),
+                                                            const Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -321,7 +318,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 4.0),
                                                 child: Text(
@@ -340,7 +337,7 @@ class _EventDetailsWidgetState extends State<EventDetailsWidget> {
                                                         font: GoogleFonts
                                                             .urbanist(),
                                                         color:
-                                                            Color(0xFF101213),
+                                                            const Color(0xFF101213),
                                                         fontSize: 18.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:

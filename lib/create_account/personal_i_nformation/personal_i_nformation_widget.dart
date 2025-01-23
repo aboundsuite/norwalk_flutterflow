@@ -6,11 +6,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'personal_i_nformation_model.dart';
 export 'personal_i_nformation_model.dart';
@@ -73,16 +70,16 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Padding(
-              padding: EdgeInsets.all(32.0),
+              padding: const EdgeInsets.all(32.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -99,7 +96,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -145,7 +142,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                 size: 24.0,
                               ),
                               onPressed: () async {
-                                final _datePicked1Date = await showDatePicker(
+                                final datePicked1Date = await showDatePicker(
                                   context: context,
                                   initialDate: getCurrentTimestamp,
                                   firstDate: DateTime(1900),
@@ -185,12 +182,12 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                   },
                                 );
 
-                                if (_datePicked1Date != null) {
+                                if (datePicked1Date != null) {
                                   safeSetState(() {
                                     _model.datePicked1 = DateTime(
-                                      _datePicked1Date.year,
-                                      _datePicked1Date.month,
-                                      _datePicked1Date.day,
+                                      datePicked1Date.year,
+                                      datePicked1Date.month,
+                                      datePicked1Date.day,
                                     );
                                   });
                                 }
@@ -199,7 +196,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 20.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -224,7 +221,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                   '01e2d573-98f4-4b7a-bf80-4e4a732255bd',
                                   '7f5627cf-8aa3-47c2-b559-86a8c3084df8'
                                 ]),
-                                optionLabels: ['Male', 'Female'],
+                                optionLabels: const ['Male', 'Female'],
                                 onChanged: (val) => safeSetState(
                                     () => _model.dropDownValue1 = val),
                                 width: 200.0,
@@ -248,7 +245,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                 borderColor: Colors.transparent,
                                 borderWidth: 0.0,
                                 borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
+                                margin: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 hidesUnderline: true,
                                 isOverButton: false,
@@ -259,7 +256,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 20.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -286,7 +283,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                   '49a31a25-12e6-4199-988d-a51edd2abbf4',
                                   '3004c8b1-91f7-42f5-90d3-9abc676ff9c4'
                                 ]),
-                                optionLabels: [
+                                optionLabels: const [
                                   'Single',
                                   'Married',
                                   'Widowed',
@@ -315,7 +312,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                 borderColor: Colors.transparent,
                                 borderWidth: 0.0,
                                 borderRadius: 8.0,
-                                margin: EdgeInsetsDirectional.fromSTEB(
+                                margin: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 12.0, 0.0),
                                 hidesUnderline: true,
                                 isOverButton: false,
@@ -370,7 +367,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                   size: 24.0,
                                 ),
                                 onPressed: () async {
-                                  final _datePicked2Date = await showDatePicker(
+                                  final datePicked2Date = await showDatePicker(
                                     context: context,
                                     initialDate: getCurrentTimestamp,
                                     firstDate: DateTime(1900),
@@ -412,12 +409,12 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                     },
                                   );
 
-                                  if (_datePicked2Date != null) {
+                                  if (datePicked2Date != null) {
                                     safeSetState(() {
                                       _model.datePicked2 = DateTime(
-                                        _datePicked2Date.year,
-                                        _datePicked2Date.month,
-                                        _datePicked2Date.day,
+                                        datePicked2Date.year,
+                                        datePicked2Date.month,
+                                        datePicked2Date.day,
                                       );
                                     });
                                   }
@@ -430,13 +427,13 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 16.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         _model.profileCompleted = await MemberProfileCall.call(
                           dateOfBirth: _model
                               .datePicked1?.millisecondsSinceEpoch
-                              ?.toString(),
+                              .toString(),
                           authToken: currentAuthenticationToken,
                           genderId: _model.dropDownValue1,
                           maritalStatusId: _model.dropDownValue2,
@@ -454,7 +451,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                             builder: (alertDialogContext) {
                               return WebViewAware(
                                 child: AlertDialog(
-                                  title: Text('Please try again!!!'),
+                                  title: const Text('Please try again!!!'),
                                   content: Text(getJsonField(
                                     (_model.profileCompleted?.jsonBody ?? ''),
                                     r'''$.message''',
@@ -463,7 +460,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                     TextButton(
                                       onPressed: () =>
                                           Navigator.pop(alertDialogContext),
-                                      child: Text('Ok'),
+                                      child: const Text('Ok'),
                                     ),
                                   ],
                                 ),
@@ -479,9 +476,9 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                         width: 370.0,
                         height: 60.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -490,7 +487,7 @@ class _PersonalINformationWidgetState extends State<PersonalINformationWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

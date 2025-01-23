@@ -5,11 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'cover_image_add_model.dart';
 export 'cover_image_add_model.dart';
@@ -71,7 +69,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -88,7 +86,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -100,34 +98,34 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(0.0),
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsets.all(32.0),
+                            padding: const EdgeInsets.all(32.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 20.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: 200.0,
                                       height: 200.0,
                                       child: Stack(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         children: [
                                           Container(
                                             width: 200.0,
@@ -165,7 +163,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 50.0,
                                               height: 50.0,
@@ -263,7 +261,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -283,7 +281,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                             return WebViewAware(
                                               child: AlertDialog(
                                                 title:
-                                                    Text('Please try again!!!'),
+                                                    const Text('Please try again!!!'),
                                                 content: Text(getJsonField(
                                                   (_model.coverPicAdded
                                                           ?.jsonBody ??
@@ -295,7 +293,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               ),
@@ -310,10 +308,10 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                     options: FFButtonOptions(
                                       width: 370.0,
                                       height: 60.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -326,7 +324,7 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                       elevation: 3.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),
@@ -351,13 +349,13 @@ class _CoverImageAddWidgetState extends State<CoverImageAddWidget> {
                 Expanded(
                   flex: 6,
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: 100.0,
                       height: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.cover,
                           image: CachedNetworkImageProvider(
                             'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1380&q=80',

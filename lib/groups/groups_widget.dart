@@ -4,12 +4,9 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'groups_model.dart';
 export 'groups_model.dart';
 
@@ -80,7 +77,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -92,7 +89,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: FutureBuilder<ApiCallResponse>(
                     future: (_model.apiRequestCompleter ??=
                             Completer<ApiCallResponse>()
@@ -124,7 +121,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                             r'''$''',
                           ).toList();
                           if (groupList.isEmpty) {
-                            return EmptyListWidget();
+                            return const EmptyListWidget();
                           }
 
                           return RefreshIndicator(
@@ -145,18 +142,18 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                               itemBuilder: (context, groupListIndex) {
                                 final groupListItem = groupList[groupListIndex];
                                 return Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                     ),
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -166,10 +163,10 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                                               CrossAxisAlignment.center,
                                           children: [
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 10.0, 0.0),
                                                 child: InkWell(
@@ -208,7 +205,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                                                     ),
                                                     child: Stack(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       children: [
                                                         ClipRRect(
@@ -229,7 +226,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -253,7 +250,7 @@ class _GroupsWidgetState extends State<GroupsWidget> {
                                                                 ),
                                                                 child: Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               15.0),
                                                                   child: Text(

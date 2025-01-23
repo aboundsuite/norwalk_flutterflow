@@ -5,15 +5,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'church_groups_model.dart';
 export 'church_groups_model.dart';
 
@@ -122,7 +117,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -178,13 +173,13 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                             final myGroupsListItem =
                                 myGroupsList[myGroupsListIndex];
                             return Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 10.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
@@ -194,13 +189,13 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                             BorderRadius.circular(0.0),
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, -1.0),
+                                            const AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 10.0, 0.0, 10.0),
                                           child: Text(
                                             getJsonField(
@@ -223,7 +218,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 20.0, 10.0, 20.0),
                                     child: Container(
                                       width: double.infinity,
@@ -272,7 +267,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                                 r'''$''',
                                               ).toList();
                                               if (bulletinGroupPosts.isEmpty) {
-                                                return EmptyListWidget();
+                                                return const EmptyListWidget();
                                               }
 
                                               return ListView.builder(
@@ -289,7 +284,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                                           bulletinGroupPostsIndex];
                                                   return Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 20.0, 0.0),
                                                     child: Container(
@@ -319,11 +314,11 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                                             children: [
                                                               Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         -1.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           0.0,
@@ -338,7 +333,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                                                             .start,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             15.0,
                                                                             0.0,
@@ -359,7 +354,7 @@ class _ChurchGroupsWidgetState extends State<ChurchGroupsWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             5.0,
                                                                             0.0,

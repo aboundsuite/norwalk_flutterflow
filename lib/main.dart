@@ -1,6 +1,5 @@
 import '/custom_code/actions/index.dart' as actions;
 import 'package:provider/provider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -12,8 +11,6 @@ import 'auth/custom_auth/custom_auth_user_provider.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
 
 void main() async {
@@ -32,11 +29,13 @@ void main() async {
 
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
-    child: MyApp(),
+    child: const MyApp(),
   ));
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   State<MyApp> createState() => _MyAppState();
@@ -75,7 +74,7 @@ class _MyAppState extends State<MyApp> {
       });
 
     Future.delayed(
-      Duration(milliseconds: 3000),
+      const Duration(milliseconds: 3000),
       () => _appStateNotifier.stopShowingSplashImage(),
     );
   }
@@ -92,7 +91,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Norwalk Baptist Church',
-      localizationsDelegates: [
+      localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -114,7 +113,7 @@ class _MyAppState extends State<MyApp> {
 }
 
 class NavBarPage extends StatefulWidget {
-  NavBarPage({Key? key, this.initialPage, this.page}) : super(key: key);
+  const NavBarPage({super.key, this.initialPage, this.page});
 
   final String? initialPage;
   final Widget? page;
@@ -138,9 +137,9 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Home': HomeWidget(),
-      'Directory': DirectoryWidget(),
-      'profileDashboard': ProfileDashboardWidget(),
+      'Home': const HomeWidget(),
+      'Directory': const DirectoryWidget(),
+      'profileDashboard': const ProfileDashboardWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -154,11 +153,11 @@ class _NavBarPageState extends State<NavBarPage> {
         }),
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         selectedItemColor: FlutterFlowTheme.of(context).primary,
-        unselectedItemColor: Color(0xFF999999),
+        unselectedItemColor: const Color(0xFF999999),
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home_outlined,

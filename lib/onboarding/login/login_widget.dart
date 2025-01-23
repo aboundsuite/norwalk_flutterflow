@@ -5,11 +5,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'login_model.dart';
 export 'login_model.dart';
@@ -101,7 +98,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -118,7 +115,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                       ),
-                      alignment: AlignmentDirectional(0.0, -1.0),
+                      alignment: const AlignmentDirectional(0.0, -1.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -129,19 +126,19 @@ class _LoginWidgetState extends State<LoginWidget> {
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(16.0),
                                   bottomRight: Radius.circular(16.0),
                                   topLeft: Radius.circular(0.0),
                                   topRight: Radius.circular(0.0),
                                 ),
                               ),
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(20.0),
                                       child: Image.network(
@@ -160,9 +157,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsets.all(32.0),
+                                padding: const EdgeInsets.all(32.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,7 +177,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 24.0),
                                       child: Text(
                                         valueOrDefault<String>(
@@ -203,9 +200,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 16.0),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 370.0,
                                         child: TextFormField(
                                           controller:
@@ -213,7 +210,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           focusNode:
                                               _model.emailAddressFocusNode,
                                           autofocus: true,
-                                          autofillHints: [AutofillHints.email],
+                                          autofillHints: const [AutofillHints.email],
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             labelText: 'Email',
@@ -285,16 +282,16 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 16.0),
-                                      child: Container(
+                                      child: SizedBox(
                                         width: 370.0,
                                         child: TextFormField(
                                           controller:
                                               _model.passwordTextController,
                                           focusNode: _model.passwordFocusNode,
                                           autofocus: true,
-                                          autofillHints: [
+                                          autofillHints: const [
                                             AutofillHints.password
                                           ],
                                           obscureText:
@@ -386,7 +383,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 16.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -439,7 +436,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 context.mounted,
                                                 extra: <String, dynamic>{
                                                   kTransitionInfoKey:
-                                                      TransitionInfo(
+                                                      const TransitionInfo(
                                                     hasTransition: true,
                                                     transitionType:
                                                         PageTransitionType.fade,
@@ -457,7 +454,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               builder: (alertDialogContext) {
                                                 return WebViewAware(
                                                   child: AlertDialog(
-                                                    title: Text(
+                                                    title: const Text(
                                                         'There is an error!!!'),
                                                     content: Text(getJsonField(
                                                       (_model.login?.jsonBody ??
@@ -469,7 +466,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                         onPressed: () =>
                                                             Navigator.pop(
                                                                 alertDialogContext),
-                                                        child: Text('Ok'),
+                                                        child: const Text('Ok'),
                                                       ),
                                                     ],
                                                   ),
@@ -485,10 +482,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           width: 370.0,
                                           height: 60.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
@@ -503,7 +500,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 letterSpacing: 0.0,
                                               ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),
@@ -515,9 +512,9 @@ class _LoginWidgetState extends State<LoginWidget> {
 
                                     // You will have to add an action on this rich text to go to your login page.
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -532,7 +529,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 .textScaler,
                                             text: TextSpan(
                                               children: [
-                                                TextSpan(
+                                                const TextSpan(
                                                   text:
                                                       'Don\'t have an account? ',
                                                   style: TextStyle(),
@@ -585,7 +582,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                     Expanded(
                       flex: 6,
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: const EdgeInsets.all(16.0),
                         child: Container(
                           width: 100.0,
                           height: double.infinity,

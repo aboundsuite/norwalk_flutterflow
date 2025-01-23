@@ -3,8 +3,6 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -48,7 +46,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetServingOpportunitiesIDCall.call(
         authToken: currentAuthenticationToken,
-        servingopportunitiesId: widget!.servingOpportunityID,
+        servingopportunitiesId: widget.servingOpportunityID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -101,11 +99,11 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -152,7 +150,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -189,7 +187,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                     ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -201,7 +199,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 20.0, 0.0, 20.0),
                             child: Text(
                               valueOrDefault<String>(
@@ -248,7 +246,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -284,14 +282,14 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 5.0, 0.0),
                                         child: Icon(
                                           Icons.mode_comment_outlined,
@@ -314,7 +312,7 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -357,20 +355,20 @@ class _MealTalkIDWidgetState extends State<MealTalkIDWidget> {
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 10.0, 20.0, 0.0),
                               child: Container(
                                 width: 100.0,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                               ),
                             ),
                           ],

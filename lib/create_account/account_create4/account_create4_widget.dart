@@ -3,12 +3,10 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'account_create4_model.dart';
 export 'account_create4_model.dart';
@@ -51,7 +49,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
         appBar: AppBar(
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -68,9 +66,9 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -81,19 +79,19 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
                                 topLeft: Radius.circular(0.0),
                                 topRight: Radius.circular(0.0),
                               ),
                             ),
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       32.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     'Verify your email!!',
@@ -113,9 +111,9 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   32.0, 50.0, 32.0, 32.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -147,7 +145,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                       fieldHeight: 50.0,
                                       fieldWidth: 50.0,
                                       borderWidth: 1.0,
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(10.0),
                                         bottomRight: Radius.circular(10.0),
                                         topLeft: Radius.circular(10.0),
@@ -170,7 +168,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                         .asValidator(context),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -189,7 +187,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                             builder: (alertDialogContext) {
                                               return WebViewAware(
                                                 child: AlertDialog(
-                                                  title: Text(
+                                                  title: const Text(
                                                       'Please contact Church Administrator!'),
                                                   content: Text(getJsonField(
                                                     (_model.otpverified
@@ -202,7 +200,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                                       onPressed: () =>
                                                           Navigator.pop(
                                                               alertDialogContext),
-                                                      child: Text('Ok'),
+                                                      child: const Text('Ok'),
                                                     ),
                                                   ],
                                                 ),
@@ -217,10 +215,10 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                       options: FFButtonOptions(
                                         width: 370.0,
                                         height: 60.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
@@ -234,7 +232,7 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                                               letterSpacing: 0.0,
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),
@@ -261,13 +259,13 @@ class _AccountCreate4WidgetState extends State<AccountCreate4Widget> {
                 Expanded(
                   flex: 6,
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Container(
                       width: 100.0,
                       height: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           fit: BoxFit.cover,
                           image: CachedNetworkImageProvider(
                             'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1380&q=80',

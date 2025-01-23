@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/backend/schema/structs/index.dart';
@@ -11,11 +9,7 @@ import '/auth/custom_auth/custom_auth_user_provider.dart';
 
 import '/index.dart';
 import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -83,56 +77,56 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : Public2Widget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const Public2Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : Public2Widget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const Public2Widget(),
         ),
         FFRoute(
           name: 'AccountCreate1',
           path: '/accountCreate1',
-          builder: (context, params) => AccountCreate1Widget(),
+          builder: (context, params) => const AccountCreate1Widget(),
         ),
         FFRoute(
           name: 'AccountCreate3',
           path: '/accountCreate3',
-          builder: (context, params) => AccountCreate3Widget(),
+          builder: (context, params) => const AccountCreate3Widget(),
         ),
         FFRoute(
           name: 'Onboarding',
           path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
+          builder: (context, params) => const OnboardingWidget(),
         ),
         FFRoute(
           name: 'Login',
           path: '/login',
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: 'settings',
           path: '/settings',
-          builder: (context, params) => SettingsWidget(),
+          builder: (context, params) => const SettingsWidget(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home') : HomeWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Home') : const HomeWidget(),
         ),
         FFRoute(
           name: 'Serve',
           path: '/serve',
-          builder: (context, params) => ServeWidget(),
+          builder: (context, params) => const ServeWidget(),
         ),
         FFRoute(
           name: 'Directory',
           path: '/directory',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Directory')
-              : DirectoryWidget(),
+              ? const NavBarPage(initialPage: 'Directory')
+              : const DirectoryWidget(),
         ),
         FFRoute(
           name: 'bulletinID',
@@ -147,22 +141,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'profileIimageAdd',
           path: '/profileIimageAdd',
-          builder: (context, params) => ProfileIimageAddWidget(),
+          builder: (context, params) => const ProfileIimageAddWidget(),
         ),
         FFRoute(
           name: 'AccountCreate2',
           path: '/accountCreate2',
-          builder: (context, params) => AccountCreate2Widget(),
+          builder: (context, params) => const AccountCreate2Widget(),
         ),
         FFRoute(
           name: 'AccountCreate4',
           path: '/accountCreate4',
-          builder: (context, params) => AccountCreate4Widget(),
+          builder: (context, params) => const AccountCreate4Widget(),
         ),
         FFRoute(
           name: 'salvationJourney',
           path: '/salvationJourney',
-          builder: (context, params) => SalvationJourneyWidget(),
+          builder: (context, params) => const SalvationJourneyWidget(),
         ),
         FFRoute(
           name: 'churchDirectoryDetails',
@@ -187,12 +181,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'personalINformation',
           path: '/personalINformation',
-          builder: (context, params) => PersonalINformationWidget(),
+          builder: (context, params) => const PersonalINformationWidget(),
         ),
         FFRoute(
           name: 'errorPage',
           path: '/errorPage',
-          builder: (context, params) => ErrorPageWidget(),
+          builder: (context, params) => const ErrorPageWidget(),
         ),
         FFRoute(
           name: 'bulletinComments',
@@ -207,12 +201,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'bibleReadingDevotions',
           path: '/bibleReadingDevotions',
-          builder: (context, params) => BibleReadingDevotionsWidget(),
+          builder: (context, params) => const BibleReadingDevotionsWidget(),
         ),
         FFRoute(
           name: 'groups',
           path: '/groups',
-          builder: (context, params) => GroupsWidget(),
+          builder: (context, params) => const GroupsWidget(),
         ),
         FFRoute(
           name: 'eventDetails',
@@ -227,12 +221,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'public2',
           path: '/public2',
-          builder: (context, params) => Public2Widget(),
+          builder: (context, params) => const Public2Widget(),
         ),
         FFRoute(
           name: 'SalvationDecision',
           path: '/salvationDecision',
-          builder: (context, params) => SalvationDecisionWidget(),
+          builder: (context, params) => const SalvationDecisionWidget(),
         ),
         FFRoute(
           name: 'bibleReading',
@@ -257,17 +251,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'prayerList',
           path: '/prayerList',
-          builder: (context, params) => PrayerListWidget(),
+          builder: (context, params) => const PrayerListWidget(),
         ),
         FFRoute(
           name: 'praisesList',
           path: '/praisesList',
-          builder: (context, params) => PraisesListWidget(),
+          builder: (context, params) => const PraisesListWidget(),
         ),
         FFRoute(
           name: 'healthNeeds',
           path: '/healthNeeds',
-          builder: (context, params) => HealthNeedsWidget(),
+          builder: (context, params) => const HealthNeedsWidget(),
         ),
         FFRoute(
           name: 'groupDetails',
@@ -282,67 +276,67 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'visitorSignUp',
           path: '/visitorSignUp',
-          builder: (context, params) => VisitorSignUpWidget(),
+          builder: (context, params) => const VisitorSignUpWidget(),
         ),
         FFRoute(
           name: 'visitorSignupConfirmation',
           path: '/visitorSignupConfirmation',
-          builder: (context, params) => VisitorSignupConfirmationWidget(),
+          builder: (context, params) => const VisitorSignupConfirmationWidget(),
         ),
         FFRoute(
           name: 'deleteAccount',
           path: '/deleteAccount',
-          builder: (context, params) => DeleteAccountWidget(),
+          builder: (context, params) => const DeleteAccountWidget(),
         ),
         FFRoute(
           name: 'deleteConfirmation',
           path: '/deleteConfirmation',
-          builder: (context, params) => DeleteConfirmationWidget(),
+          builder: (context, params) => const DeleteConfirmationWidget(),
         ),
         FFRoute(
           name: 'cancelDeleteConfirmationSuccess',
           path: '/cancelDeleteConfirmationSuccess',
-          builder: (context, params) => CancelDeleteConfirmationSuccessWidget(),
+          builder: (context, params) => const CancelDeleteConfirmationSuccessWidget(),
         ),
         FFRoute(
           name: 'password',
           path: '/password',
-          builder: (context, params) => PasswordWidget(),
+          builder: (context, params) => const PasswordWidget(),
         ),
         FFRoute(
           name: 'profileImageChange',
           path: '/profileImageChange',
-          builder: (context, params) => ProfileImageChangeWidget(),
+          builder: (context, params) => const ProfileImageChangeWidget(),
         ),
         FFRoute(
           name: 'createPrayers',
           path: '/createPrayers',
-          builder: (context, params) => CreatePrayersWidget(),
+          builder: (context, params) => const CreatePrayersWidget(),
         ),
         FFRoute(
           name: 'MyPrayers',
           path: '/myPrayers',
-          builder: (context, params) => MyPrayersWidget(),
+          builder: (context, params) => const MyPrayersWidget(),
         ),
         FFRoute(
           name: 'MyPraises',
           path: '/myPraises',
-          builder: (context, params) => MyPraisesWidget(),
+          builder: (context, params) => const MyPraisesWidget(),
         ),
         FFRoute(
           name: 'MyTasks',
           path: '/myTasks',
-          builder: (context, params) => MyTasksWidget(),
+          builder: (context, params) => const MyTasksWidget(),
         ),
         FFRoute(
           name: 'MyCheckIN',
           path: '/myCheckIN',
-          builder: (context, params) => MyCheckINWidget(),
+          builder: (context, params) => const MyCheckINWidget(),
         ),
         FFRoute(
           name: 'MyFamily',
           path: '/myFamily',
-          builder: (context, params) => MyFamilyWidget(),
+          builder: (context, params) => const MyFamilyWidget(),
         ),
         FFRoute(
           name: 'getPrayerID',
@@ -357,7 +351,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'createPraises',
           path: '/createPraises',
-          builder: (context, params) => CreatePraisesWidget(),
+          builder: (context, params) => const CreatePraisesWidget(),
         ),
         FFRoute(
           name: 'getPraiseID',
@@ -372,12 +366,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'servingOpportunities',
           path: '/servingOpportunities',
-          builder: (context, params) => ServingOpportunitiesWidget(),
+          builder: (context, params) => const ServingOpportunitiesWidget(),
         ),
         FFRoute(
           name: 'mealTalk',
           path: '/mealTalk',
-          builder: (context, params) => MealTalkWidget(),
+          builder: (context, params) => const MealTalkWidget(),
         ),
         FFRoute(
           name: 'servingOpportunityID',
@@ -402,7 +396,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'churchGroups',
           path: '/churchGroups',
-          builder: (context, params) => ChurchGroupsWidget(),
+          builder: (context, params) => const ChurchGroupsWidget(),
         ),
         FFRoute(
           name: 'churchGroupID',
@@ -417,49 +411,49 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'ServeCopy',
           path: '/serveCopy',
-          builder: (context, params) => ServeCopyWidget(),
+          builder: (context, params) => const ServeCopyWidget(),
         ),
         FFRoute(
           name: 'profileReviewPending',
           path: '/profileReviewPending',
-          builder: (context, params) => ProfileReviewPendingWidget(),
+          builder: (context, params) => const ProfileReviewPendingWidget(),
         ),
         FFRoute(
           name: 'profileReview',
           path: '/profileReview',
-          builder: (context, params) => ProfileReviewWidget(),
+          builder: (context, params) => const ProfileReviewWidget(),
         ),
         FFRoute(
           name: 'coverImageAdd',
           path: '/coverImageAdd',
-          builder: (context, params) => CoverImageAddWidget(),
+          builder: (context, params) => const CoverImageAddWidget(),
         ),
         FFRoute(
           name: 'testimony',
           path: '/testimony',
-          builder: (context, params) => TestimonyWidget(),
+          builder: (context, params) => const TestimonyWidget(),
         ),
         FFRoute(
           name: 'address',
           path: '/address',
-          builder: (context, params) => AddressWidget(),
+          builder: (context, params) => const AddressWidget(),
         ),
         FFRoute(
           name: 'profileDashboard',
           path: '/profileDashboard',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'profileDashboard')
-              : ProfileDashboardWidget(),
+              ? const NavBarPage(initialPage: 'profileDashboard')
+              : const ProfileDashboardWidget(),
         ),
         FFRoute(
           name: 'prayerListCopy',
           path: '/prayerListCopy',
-          builder: (context, params) => PrayerListCopyWidget(),
+          builder: (context, params) => const PrayerListCopyWidget(),
         ),
         FFRoute(
           name: 'AddGroups',
           path: '/addGroups',
-          builder: (context, params) => AddGroupsWidget(),
+          builder: (context, params) => const AddGroupsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -697,7 +691,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

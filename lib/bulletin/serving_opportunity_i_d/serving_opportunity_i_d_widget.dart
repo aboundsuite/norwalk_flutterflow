@@ -3,11 +3,9 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'serving_opportunity_i_d_model.dart';
 export 'serving_opportunity_i_d_model.dart';
 
@@ -48,7 +46,7 @@ class _ServingOpportunityIDWidgetState
     return FutureBuilder<ApiCallResponse>(
       future: GetServingOpportunitiesIDCall.call(
         authToken: currentAuthenticationToken,
-        servingopportunitiesId: widget!.servingOpportunityID,
+        servingopportunitiesId: widget.servingOpportunityID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -102,11 +100,11 @@ class _ServingOpportunityIDWidgetState
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -153,7 +151,7 @@ class _ServingOpportunityIDWidgetState
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -191,7 +189,7 @@ class _ServingOpportunityIDWidgetState
                     ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -205,13 +203,13 @@ class _ServingOpportunityIDWidgetState
                                 ) ==
                                 true)
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 10.0, 20.0),
                                 child: FutureBuilder<ApiCallResponse>(
                                   future: ServingInAMinistryExistCall.call(
                                     authToken: currentAuthenticationToken,
                                     servingopportunitiesId:
-                                        widget!.servingOpportunityID,
+                                        widget.servingOpportunityID,
                                   ),
                                   builder: (context, snapshot) {
                                     // Customize what your widget looks like when it's loading.
@@ -244,7 +242,7 @@ class _ServingOpportunityIDWidgetState
                                             false)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 _model.onetimesignup =
@@ -253,7 +251,7 @@ class _ServingOpportunityIDWidgetState
                                                   authToken:
                                                       currentAuthenticationToken,
                                                   servingopportunitiesId:
-                                                      widget!
+                                                      widget
                                                           .servingOpportunityID,
                                                 );
 
@@ -269,11 +267,11 @@ class _ServingOpportunityIDWidgetState
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -304,7 +302,7 @@ class _ServingOpportunityIDWidgetState
                                             true)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -320,11 +318,11 @@ class _ServingOpportunityIDWidgetState
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -364,13 +362,13 @@ class _ServingOpportunityIDWidgetState
                                 ) ==
                                 false)
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 10.0, 20.0),
                                 child: FutureBuilder<ApiCallResponse>(
                                   future: ServingInAMinistryExistCall.call(
                                     authToken: currentAuthenticationToken,
                                     servingopportunitiesId:
-                                        widget!.servingOpportunityID,
+                                        widget.servingOpportunityID,
                                   ),
                                   builder: (context, snapshot) {
                                     // Customize what your widget looks like when it's loading.
@@ -403,7 +401,7 @@ class _ServingOpportunityIDWidgetState
                                             false)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 _model.joining =
@@ -412,7 +410,7 @@ class _ServingOpportunityIDWidgetState
                                                   authToken:
                                                       currentAuthenticationToken,
                                                   servingopportunitiesId:
-                                                      widget!
+                                                      widget
                                                           .servingOpportunityID,
                                                 );
 
@@ -428,11 +426,11 @@ class _ServingOpportunityIDWidgetState
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -463,7 +461,7 @@ class _ServingOpportunityIDWidgetState
                                             true)
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(1.0, 1.0),
+                                                const AlignmentDirectional(1.0, 1.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
                                                 print('Button pressed ...');
@@ -478,11 +476,11 @@ class _ServingOpportunityIDWidgetState
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -525,7 +523,7 @@ class _ServingOpportunityIDWidgetState
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 20.0, 0.0, 20.0),
                             child: Text(
                               valueOrDefault<String>(
@@ -547,7 +545,7 @@ class _ServingOpportunityIDWidgetState
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 10.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
@@ -556,7 +554,7 @@ class _ServingOpportunityIDWidgetState
                                   .secondaryBackground,
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 20.0, 0.0, 20.0),
                               child: Text(
                                 'Ministry Leader: ${GetServingOpportunitiesIDCall.leaderName(
@@ -580,7 +578,7 @@ class _ServingOpportunityIDWidgetState
                             ) ==
                             false)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -589,7 +587,7 @@ class _ServingOpportunityIDWidgetState
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 0.0, 20.0),
                                 child: Text(
                                   'Day of the Week: ${GetServingOpportunitiesIDCall.dayoftheweek(
@@ -613,7 +611,7 @@ class _ServingOpportunityIDWidgetState
                             ) ==
                             true)
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 10.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -622,7 +620,7 @@ class _ServingOpportunityIDWidgetState
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 20.0, 0.0, 20.0),
                                 child: Text(
                                   'Due Date: ${dateTimeFormat(
@@ -650,9 +648,9 @@ class _ServingOpportunityIDWidgetState
                             ),
                           ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 20.0),
-                          child: Container(
+                          child: SizedBox(
                             width: double.infinity,
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -672,17 +670,17 @@ class _ServingOpportunityIDWidgetState
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       5.0, 0.0, 0.0, 0.0),
                                   child: Container(
                                     height: 50.0,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: FutureBuilder<ApiCallResponse>(
                                       future:
                                           TeamDirectoryCOuntServingCall.call(
                                         authToken: currentAuthenticationToken,
                                         servingopportunitiesId:
-                                            widget!.servingOpportunityID,
+                                            widget.servingOpportunityID,
                                       ),
                                       builder: (context, snapshot) {
                                         // Customize what your widget looks like when it's loading.
@@ -728,7 +726,7 @@ class _ServingOpportunityIDWidgetState
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Serving',
@@ -756,7 +754,7 @@ class _ServingOpportunityIDWidgetState
                         ),
                         Container(
                           height: 120.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                         ),
                       ],
                     ),

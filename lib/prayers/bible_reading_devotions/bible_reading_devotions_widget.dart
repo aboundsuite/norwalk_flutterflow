@@ -4,13 +4,10 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'bible_reading_devotions_model.dart';
 export 'bible_reading_devotions_model.dart';
 
@@ -79,7 +76,7 @@ class _BibleReadingDevotionsWidgetState
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -93,7 +90,7 @@ class _BibleReadingDevotionsWidgetState
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(0.0, 0),
+                      alignment: const Alignment(0.0, 0),
                       child: TabBar(
                         labelColor: FlutterFlowTheme.of(context).primaryText,
                         unselectedLabelColor:
@@ -103,10 +100,10 @@ class _BibleReadingDevotionsWidgetState
                                   font: GoogleFonts.workSans(),
                                   letterSpacing: 0.0,
                                 ),
-                        unselectedLabelStyle: TextStyle(),
+                        unselectedLabelStyle: const TextStyle(),
                         indicatorColor: FlutterFlowTheme.of(context).primary,
-                        padding: EdgeInsets.all(4.0),
-                        tabs: [
+                        padding: const EdgeInsets.all(4.0),
+                        tabs: const [
                           Tab(
                             text: 'Bible Reading',
                             icon: FaIcon(
@@ -170,7 +167,7 @@ class _BibleReadingDevotionsWidgetState
                                           r'''$''',
                                         ).toList();
                                         if (bibleReadingList.isEmpty) {
-                                          return EmptyListWidget();
+                                          return const EmptyListWidget();
                                         }
 
                                         return RefreshIndicator(
@@ -204,7 +201,7 @@ class _BibleReadingDevotionsWidgetState
                                                       .secondaryBackground,
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 12.0),
                                                   child: Column(
@@ -218,11 +215,11 @@ class _BibleReadingDevotionsWidgetState
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           8.0,
@@ -252,11 +249,11 @@ class _BibleReadingDevotionsWidgetState
                                                                               10.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           100.0,
@@ -307,7 +304,7 @@ class _BibleReadingDevotionsWidgetState
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         40.0,
                                                                         40.0,
@@ -328,7 +325,7 @@ class _BibleReadingDevotionsWidgetState
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Text(
@@ -415,7 +412,7 @@ class _BibleReadingDevotionsWidgetState
                                           r'''$''',
                                         ).toList();
                                         if (devotionsList.isEmpty) {
-                                          return EmptyListWidget();
+                                          return const EmptyListWidget();
                                         }
 
                                         return RefreshIndicator(
@@ -449,7 +446,7 @@ class _BibleReadingDevotionsWidgetState
                                                       .secondaryBackground,
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 12.0),
                                                   child: Column(
@@ -463,11 +460,11 @@ class _BibleReadingDevotionsWidgetState
                                                         children: [
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           8.0,
@@ -497,11 +494,11 @@ class _BibleReadingDevotionsWidgetState
                                                                               10.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           100.0,
@@ -552,7 +549,7 @@ class _BibleReadingDevotionsWidgetState
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         40.0,
                                                                         40.0,
@@ -573,7 +570,7 @@ class _BibleReadingDevotionsWidgetState
                                                               ),
                                                               child: Align(
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Text(

@@ -4,12 +4,9 @@ import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'serving_opportunities_model.dart';
 export 'serving_opportunities_model.dart';
 
@@ -77,7 +74,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Serving Opportunities',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -90,7 +87,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -100,19 +97,19 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 20.0, 10.0),
                 child: Container(
                   width: double.infinity,
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                 ),
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Column(
                     children: [
                       Align(
-                        alignment: Alignment(0.0, 0),
+                        alignment: const Alignment(0.0, 0),
                         child: FlutterFlowButtonTabBar(
                           useToggleButtonStyle: false,
                           isScrollable: true,
@@ -122,7 +119,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                   ),
-                          unselectedLabelStyle: TextStyle(),
+                          unselectedLabelStyle: const TextStyle(),
                           labelColor: FlutterFlowTheme.of(context).primary,
                           unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
@@ -133,13 +130,13 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                           borderWidth: 0.0,
                           borderRadius: 10.0,
                           elevation: 0.0,
-                          labelPadding: EdgeInsetsDirectional.fromSTEB(
+                          labelPadding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          buttonMargin: EdgeInsetsDirectional.fromSTEB(
+                          buttonMargin: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
-                          tabs: [
+                          tabs: const [
                             Tab(
                               text: 'Weekly',
                             ),
@@ -163,7 +160,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: FutureBuilder<ApiCallResponse>(
                                       future: (_model.apiRequestCompleter1 ??=
@@ -205,7 +202,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                               r'''$''',
                                             ).toList();
                                             if (servingOpportunities.isEmpty) {
-                                              return EmptyListWidget();
+                                              return const EmptyListWidget();
                                             }
 
                                             return RefreshIndicator(
@@ -236,11 +233,11 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                           servingOpportunitiesIndex];
                                                   return Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -284,7 +281,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                           ),
                                                           child: Stack(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             children: [
                                                               ClipRRect(
@@ -306,7 +303,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
@@ -328,7 +325,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(15.0),
+                                                                            const EdgeInsets.all(15.0),
                                                                         child:
                                                                             Text(
                                                                           getJsonField(
@@ -373,7 +370,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 0.0),
                                     child: FutureBuilder<ApiCallResponse>(
                                       future: (_model.apiRequestCompleter2 ??=
@@ -414,7 +411,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                               r'''$''',
                                             ).toList();
                                             if (oneTimeServing.isEmpty) {
-                                              return EmptyListWidget();
+                                              return const EmptyListWidget();
                                             }
 
                                             return RefreshIndicator(
@@ -445,11 +442,11 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                           oneTimeServingIndex];
                                                   return Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   10.0,
                                                                   0.0,
@@ -493,7 +490,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                           ),
                                                           child: Stack(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             children: [
                                                               ClipRRect(
@@ -515,7 +512,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                                 ),
                                                               ),
                                                               Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
@@ -537,7 +534,7 @@ class _ServingOpportunitiesWidgetState extends State<ServingOpportunitiesWidget>
                                                                       child:
                                                                           Padding(
                                                                         padding:
-                                                                            EdgeInsets.all(15.0),
+                                                                            const EdgeInsets.all(15.0),
                                                                         child:
                                                                             Text(
                                                                           getJsonField(

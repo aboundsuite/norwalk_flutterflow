@@ -1,10 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'bulletin_comments_model.dart';
 export 'bulletin_comments_model.dart';
 
@@ -58,7 +56,7 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -85,14 +83,14 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
             child: Container(
               width: double.infinity,
               height: 400.0,
@@ -105,8 +103,8 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
-                    child: Container(
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 20.0, 20.0, 20.0),
+                    child: SizedBox(
                       width: double.infinity,
                       child: TextFormField(
                         controller: _model.textController,
@@ -127,14 +125,14 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
                                     letterSpacing: 0.0,
                                   ),
                           enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Color(0x00000000),
                               width: 1.0,
                             ),
@@ -171,10 +169,10 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(1.0, -1.0),
+                    alignment: const AlignmentDirectional(1.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 50.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 50.0),
                       child: FFButtonWidget(
                         onPressed: () {
                           print('Button pressed ...');
@@ -182,9 +180,9 @@ class _BulletinCommentsWidgetState extends State<BulletinCommentsWidget> {
                         text: 'Post',
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:

@@ -5,17 +5,12 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'public2_model.dart';
 export 'public2_model.dart';
@@ -49,8 +44,8 @@ class _Public2WidgetState extends State<Public2Widget>
             curve: Curves.elasticOut,
             delay: 270.0.ms,
             duration: 670.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -187,8 +182,8 @@ class _Public2WidgetState extends State<Public2Widget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 90.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 90.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -246,13 +241,13 @@ class _Public2WidgetState extends State<Public2Widget>
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 40.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -317,14 +312,14 @@ class _Public2WidgetState extends State<Public2Widget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Text(
                                   valueOrDefault<String>(
@@ -359,7 +354,7 @@ class _Public2WidgetState extends State<Public2Widget>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -373,7 +368,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
@@ -383,13 +378,13 @@ class _Public2WidgetState extends State<Public2Widget>
                                               BorderRadius.circular(0.0),
                                         ),
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 10.0, 0.0, 10.0),
                                             child: Text(
                                               'Salvation Explained.',
@@ -411,7 +406,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: Container(
                                         width: double.infinity,
@@ -422,15 +417,15 @@ class _Public2WidgetState extends State<Public2Widget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
-                                          child: Container(
+                                          child: SizedBox(
                                             width: double.infinity,
                                             height: 500.0,
                                             child: Stack(
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 40.0),
                                                   child: PageView(
@@ -450,7 +445,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -474,7 +469,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -498,7 +493,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -513,10 +508,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -543,11 +538,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -598,7 +593,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -622,7 +617,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -645,7 +640,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -660,10 +655,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -690,11 +685,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -745,7 +740,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -769,7 +764,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -792,7 +787,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -806,10 +801,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -836,11 +831,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -891,7 +886,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -915,7 +910,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -938,7 +933,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -952,10 +947,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -982,11 +977,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -1037,7 +1032,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1064,7 +1059,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1088,7 +1083,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -1102,10 +1097,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -1132,11 +1127,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -1187,7 +1182,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1214,7 +1209,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1237,7 +1232,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -1251,10 +1246,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -1281,11 +1276,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           0.0,
@@ -1336,7 +1331,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1363,7 +1358,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1386,7 +1381,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Container(
                                                               width: 360.0,
@@ -1400,10 +1395,10 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                             10.0),
                                                               ),
                                                               alignment:
-                                                                  AlignmentDirectional(
+                                                                  const AlignmentDirectional(
                                                                       0.0, 0.0),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         20.0,
                                                                         40.0,
@@ -1430,7 +1425,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         20.0,
@@ -1454,14 +1449,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                 width: double
                                                                     .infinity,
                                                                 height: 60.0,
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                                 iconPadding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -1497,11 +1492,11 @@ class _Public2WidgetState extends State<Public2Widget>
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 1.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 16.0),
                                                     child: smooth_page_indicator
@@ -1518,7 +1513,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                             .pageViewController!
                                                             .animateToPage(
                                                           i,
-                                                          duration: Duration(
+                                                          duration: const Duration(
                                                               milliseconds:
                                                                   500),
                                                           curve: Curves.ease,
@@ -1557,7 +1552,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(-1.0, 0.0),
+                                    alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
@@ -1567,13 +1562,13 @@ class _Public2WidgetState extends State<Public2Widget>
                                             BorderRadius.circular(0.0),
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, -1.0),
+                                            const AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 10.0, 0.0, 10.0),
                                           child: Text(
                                             'Quick Links',
@@ -1593,7 +1588,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 20.0, 10.0, 20.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -1613,16 +1608,16 @@ class _Public2WidgetState extends State<Public2Widget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
                                                 width: double.infinity,
                                                 height: 100.0,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           10.0, 0.0, 10.0, 0.0),
                                                   child: Row(
@@ -1769,14 +1764,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
@@ -1786,13 +1781,13 @@ class _Public2WidgetState extends State<Public2Widget>
                                               BorderRadius.circular(0.0),
                                         ),
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 10.0, 0.0, 10.0),
                                             child: Text(
                                               'Service Schedule',
@@ -1814,7 +1809,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -1834,7 +1829,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -1878,7 +1873,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     10.0,
@@ -1890,7 +1885,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                                 'https://www.youtube.com/@norwalkbaptistchurch1635/streams');
                                                           },
                                                           text: 'Watch Live',
-                                                          icon: FaIcon(
+                                                          icon: const FaIcon(
                                                             FontAwesomeIcons
                                                                 .youtube,
                                                             size: 15.0,
@@ -1899,14 +1894,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                                               FFButtonOptions(
                                                             height: 40.0,
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
                                                                         16.0,
                                                                         0.0),
                                                             iconPadding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -1958,14 +1953,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
@@ -1975,13 +1970,13 @@ class _Public2WidgetState extends State<Public2Widget>
                                               BorderRadius.circular(0.0),
                                         ),
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 10.0, 0.0, 10.0),
                                             child: Text(
                                               'Giving',
@@ -2003,7 +1998,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -2023,7 +2018,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
@@ -2037,7 +2032,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                   ),
                                                   child: Stack(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     children: [
                                                       ClipRRect(
@@ -2056,7 +2051,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                         opacity: 0.7,
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 0.0),
                                                           child: Container(
                                                             width:
@@ -2109,14 +2104,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
                                         decoration: BoxDecoration(
@@ -2126,13 +2121,13 @@ class _Public2WidgetState extends State<Public2Widget>
                                               BorderRadius.circular(0.0),
                                         ),
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(-1.0, -1.0),
+                                              const AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     20.0, 10.0, 0.0, 10.0),
                                             child: Text(
                                               'Food Pantry',
@@ -2154,7 +2149,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 20.0, 10.0, 20.0),
                                       child: Container(
                                         width: double.infinity,
@@ -2164,7 +2159,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
@@ -2178,7 +2173,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                 ),
                                                 child: Stack(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   children: [
                                                     ClipRRect(
@@ -2196,7 +2191,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                                       opacity: 0.7,
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Container(
                                                           width:
@@ -2236,7 +2231,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                               ).animateOnPageLoad(animationsMap[
                                                   'containerOnPageLoadAnimation10']!),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 20.0, 0.0, 20.0),
                                                 child: Text(
@@ -2260,14 +2255,14 @@ class _Public2WidgetState extends State<Public2Widget>
                                                 text: 'Register for Updates',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 16.0, 0.0),
                                                   iconPadding:
-                                                      EdgeInsetsDirectional
+                                                      const EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
-                                                  color: Color(0x0006264C),
+                                                  color: const Color(0x0006264C),
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .titleSmall
@@ -2314,12 +2309,12 @@ class _Public2WidgetState extends State<Public2Widget>
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsets.all(24.0),
+                        padding: const EdgeInsets.all(24.0),
                         child: Wrap(
                           spacing: 16.0,
                           runSpacing: 16.0,
@@ -2338,9 +2333,9 @@ class _Public2WidgetState extends State<Public2Widget>
                               options: FFButtonOptions(
                                 width: 150.0,
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -2352,7 +2347,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       letterSpacing: 0.0,
                                     ),
                                 elevation: 2.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -2367,9 +2362,9 @@ class _Public2WidgetState extends State<Public2Widget>
                               options: FFButtonOptions(
                                 width: 150.0,
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).secondary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -2381,7 +2376,7 @@ class _Public2WidgetState extends State<Public2Widget>
                                       letterSpacing: 0.0,
                                     ),
                                 elevation: 2.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),

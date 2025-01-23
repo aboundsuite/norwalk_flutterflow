@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'package:webviewx_plus/webviewx_plus.dart';
 import 'salvation_journey_model.dart';
 export 'salvation_journey_model.dart';
@@ -76,7 +73,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -93,7 +90,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -104,20 +101,20 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(0.0),
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     32.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Your Salvation Journey.',
@@ -134,7 +131,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     32.0, 10.0, 32.0, 0.0),
                                 child: Text(
                                   'Enter your current journey stage to reflect your growth and connect with resources tailored to you.',
@@ -150,9 +147,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 32.0, 32.0, 32.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -167,7 +164,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -191,7 +188,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                               value: _model.isSavedValue!,
                                               onChanged: (newValue) async {
                                                 safeSetState(() => _model
-                                                    .isSavedValue = newValue!);
+                                                    .isSavedValue = newValue);
                                               },
                                               activeColor:
                                                   FlutterFlowTheme.of(context)
@@ -261,7 +258,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                               onPressed: !_model.isSavedValue!
                                                   ? null
                                                   : () async {
-                                                      final _datePicked1Date =
+                                                      final datePicked1Date =
                                                           await showDatePicker(
                                                         context: context,
                                                         initialDate:
@@ -323,16 +320,16 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                         },
                                                       );
 
-                                                      if (_datePicked1Date !=
+                                                      if (datePicked1Date !=
                                                           null) {
                                                         safeSetState(() {
                                                           _model.datePicked1 =
                                                               DateTime(
-                                                            _datePicked1Date
+                                                            datePicked1Date
                                                                 .year,
-                                                            _datePicked1Date
+                                                            datePicked1Date
                                                                 .month,
-                                                            _datePicked1Date
+                                                            datePicked1Date
                                                                 .day,
                                                           );
                                                         });
@@ -347,13 +344,13 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                 ),
                                 if (_model.isSavedValue ?? true)
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Container(
                                             width: 2.0,
                                             height: 50.0,
@@ -373,9 +370,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                         ),
                         if (_model.isSavedValue ?? true)
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   32.0, 0.0, 32.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -390,7 +387,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -415,7 +412,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                 onChanged: (newValue) async {
                                                   safeSetState(() =>
                                                       _model.isBaptizedValue =
-                                                          newValue!);
+                                                          newValue);
                                                 },
                                                 activeColor:
                                                     FlutterFlowTheme.of(context)
@@ -486,7 +483,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                         .isBaptizedValue!
                                                     ? null
                                                     : () async {
-                                                        final _datePicked2Date =
+                                                        final datePicked2Date =
                                                             await showDatePicker(
                                                           context: context,
                                                           initialDate:
@@ -547,16 +544,16 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                           },
                                                         );
 
-                                                        if (_datePicked2Date !=
+                                                        if (datePicked2Date !=
                                                             null) {
                                                           safeSetState(() {
                                                             _model.datePicked2 =
                                                                 DateTime(
-                                                              _datePicked2Date
+                                                              datePicked2Date
                                                                   .year,
-                                                              _datePicked2Date
+                                                              datePicked2Date
                                                                   .month,
-                                                              _datePicked2Date
+                                                              datePicked2Date
                                                                   .day,
                                                             );
                                                           });
@@ -571,13 +568,13 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                   ),
                                   if (_model.isBaptizedValue ?? true)
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Container(
                                               width: 2.0,
                                               height: 50.0,
@@ -597,9 +594,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                           ),
                         if (_model.isBaptizedValue ?? true)
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   32.0, 0.0, 32.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -614,7 +611,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -639,7 +636,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                 onChanged: (newValue) async {
                                                   safeSetState(() =>
                                                       _model.isAMemberValue =
-                                                          newValue!);
+                                                          newValue);
                                                 },
                                                 activeColor:
                                                     FlutterFlowTheme.of(context)
@@ -710,7 +707,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                         .isAMemberValue!
                                                     ? null
                                                     : () async {
-                                                        final _datePicked3Date =
+                                                        final datePicked3Date =
                                                             await showDatePicker(
                                                           context: context,
                                                           initialDate:
@@ -771,16 +768,16 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                           },
                                                         );
 
-                                                        if (_datePicked3Date !=
+                                                        if (datePicked3Date !=
                                                             null) {
                                                           safeSetState(() {
                                                             _model.datePicked3 =
                                                                 DateTime(
-                                                              _datePicked3Date
+                                                              datePicked3Date
                                                                   .year,
-                                                              _datePicked3Date
+                                                              datePicked3Date
                                                                   .month,
-                                                              _datePicked3Date
+                                                              datePicked3Date
                                                                   .day,
                                                             );
                                                           });
@@ -795,13 +792,13 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                   ),
                                   if (_model.isAMemberValue ?? true)
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Container(
                                               width: 2.0,
                                               height: 50.0,
@@ -821,9 +818,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                           ),
                         if (_model.isAMemberValue ?? true)
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   32.0, 0.0, 32.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -838,7 +835,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -863,7 +860,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                 onChanged: (newValue) async {
                                                   safeSetState(() =>
                                                       _model.isDiscipledValue =
-                                                          newValue!);
+                                                          newValue);
                                                 },
                                                 activeColor:
                                                     FlutterFlowTheme.of(context)
@@ -934,7 +931,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                         .isDiscipledValue!
                                                     ? null
                                                     : () async {
-                                                        final _datePicked4Date =
+                                                        final datePicked4Date =
                                                             await showDatePicker(
                                                           context: context,
                                                           initialDate:
@@ -995,16 +992,16 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                           },
                                                         );
 
-                                                        if (_datePicked4Date !=
+                                                        if (datePicked4Date !=
                                                             null) {
                                                           safeSetState(() {
                                                             _model.datePicked4 =
                                                                 DateTime(
-                                                              _datePicked4Date
+                                                              datePicked4Date
                                                                   .year,
-                                                              _datePicked4Date
+                                                              datePicked4Date
                                                                   .month,
-                                                              _datePicked4Date
+                                                              datePicked4Date
                                                                   .day,
                                                             );
                                                           });
@@ -1019,13 +1016,13 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                   ),
                                   if (_model.isDiscipledValue ?? true)
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Container(
                                               width: 2.0,
                                               height: 50.0,
@@ -1045,9 +1042,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                           ),
                         if (_model.isDiscipledValue ?? true)
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   32.0, 0.0, 32.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -1062,7 +1059,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -1087,7 +1084,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                 onChanged: (newValue) async {
                                                   safeSetState(() =>
                                                       _model.isServingValue =
-                                                          newValue!);
+                                                          newValue);
                                                 },
                                                 activeColor:
                                                     FlutterFlowTheme.of(context)
@@ -1158,7 +1155,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                         .isServingValue!
                                                     ? null
                                                     : () async {
-                                                        final _datePicked5Date =
+                                                        final datePicked5Date =
                                                             await showDatePicker(
                                                           context: context,
                                                           initialDate:
@@ -1219,16 +1216,16 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                                           },
                                                         );
 
-                                                        if (_datePicked5Date !=
+                                                        if (datePicked5Date !=
                                                             null) {
                                                           safeSetState(() {
                                                             _model.datePicked5 =
                                                                 DateTime(
-                                                              _datePicked5Date
+                                                              datePicked5Date
                                                                   .year,
-                                                              _datePicked5Date
+                                                              datePicked5Date
                                                                   .month,
-                                                              _datePicked5Date
+                                                              datePicked5Date
                                                                   .day,
                                                             );
                                                           });
@@ -1246,7 +1243,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                             ),
                           ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 16.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -1257,24 +1254,24 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                 isSaved: _model.isSavedValue?.toString(),
                                 savedDate: _model
                                     .datePicked1?.millisecondsSinceEpoch
-                                    ?.toString(),
+                                    .toString(),
                                 isBaptized: _model.isBaptizedValue?.toString(),
                                 baptizedDate: _model
                                     .datePicked2?.millisecondsSinceEpoch
-                                    ?.toString(),
+                                    .toString(),
                                 isAMember: _model.isAMemberValue?.toString(),
                                 membershipDate: _model
                                     .datePicked3?.millisecondsSinceEpoch
-                                    ?.toString(),
+                                    .toString(),
                                 isDiscipled:
                                     _model.isDiscipledValue?.toString(),
                                 discipleshipDate: _model
                                     .datePicked4?.millisecondsSinceEpoch
-                                    ?.toString(),
+                                    .toString(),
                                 isServing: _model.isServingValue?.toString(),
                                 servingSinceDate: _model
                                     .datePicked5?.millisecondsSinceEpoch
-                                    ?.toString(),
+                                    .toString(),
                               );
 
                               if ((_model.soulJourneyCreated?.succeeded ??
@@ -1286,7 +1283,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                   builder: (alertDialogContext) {
                                     return WebViewAware(
                                       child: AlertDialog(
-                                        title: Text('Kindly try again!!!'),
+                                        title: const Text('Kindly try again!!!'),
                                         content: Text(getJsonField(
                                           (_model.soulJourneyCreated
                                                   ?.jsonBody ??
@@ -1297,7 +1294,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                           TextButton(
                                             onPressed: () => Navigator.pop(
                                                 alertDialogContext),
-                                            child: Text('Ok'),
+                                            child: const Text('Ok'),
                                           ),
                                         ],
                                       ),
@@ -1312,9 +1309,9 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                             options: FFButtonOptions(
                               width: 370.0,
                               height: 60.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primary,
                               textStyle: FlutterFlowTheme.of(context)
@@ -1326,7 +1323,7 @@ class _SalvationJourneyWidgetState extends State<SalvationJourneyWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

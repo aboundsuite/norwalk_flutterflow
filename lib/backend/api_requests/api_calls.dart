@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
-import '../schema/structs/index.dart';
 
 import 'package:flutter/foundation.dart';
 
@@ -19,9 +17,9 @@ class MemberLoginCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "email": "${email}",
-  "password": "${password}",
-  "church_id": "${churchId}"
+  "email": "$email",
+  "password": "$password",
+  "church_id": "$churchId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Login',
@@ -181,9 +179,9 @@ class MemberLoginApprovalCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "email": "${email}",
-  "password": "${password}",
-  "church_id": "${churchId}"
+  "email": "$email",
+  "password": "$password",
+  "church_id": "$churchId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Login Approval',
@@ -344,7 +342,7 @@ class YoutubeListCall {
       apiUrl: 'https://api.aboundfi.com/api:vzsq_oUD/youtubeurl',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -366,7 +364,7 @@ class MyGroupListCall {
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/mygroups',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -388,7 +386,7 @@ class UserPrayersCall {
       apiUrl: 'https://api.aboundfi.com/api:ScJhCWfk/userprayer',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -412,7 +410,7 @@ class TeamDirectoryServingCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiessignup',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -434,7 +432,7 @@ class SavedDetailsCall {
       apiUrl: 'https://api.aboundfi.com/api:vuXdHAp6/savedDate',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -456,7 +454,7 @@ class BaptizedDateCall {
       apiUrl: 'https://api.aboundfi.com/api:vuXdHAp6/baptizedDate',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -478,7 +476,7 @@ class ServingDateCall {
       apiUrl: 'https://api.aboundfi.com/api:vuXdHAp6/servingDate',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -500,7 +498,7 @@ class DiscipleshipDateCall {
       apiUrl: 'https://api.aboundfi.com/api:vuXdHAp6/discipleshipDate',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -522,7 +520,7 @@ class MembershipDateCall {
       apiUrl: 'https://api.aboundfi.com/api:vuXdHAp6/membershipDate',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -544,7 +542,7 @@ class BibleReadiingCall {
       apiUrl: 'https://api.aboundfi.com/api:rgNjvYK9/bible_reading_today',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -566,7 +564,7 @@ class DevotionsCall {
       apiUrl: 'https://api.aboundfi.com/api:7PwslRrq/devotions_today',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -587,10 +585,10 @@ class GetBulletinByIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Bulletin By ID',
       apiUrl:
-          'https://api.aboundfi.com/api:fuKs4M51/generalannouncements/${generalannouncementsId}',
+          'https://api.aboundfi.com/api:fuKs4M51/generalannouncements/$generalannouncementsId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -674,10 +672,10 @@ class GetServingOpportunitiesIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Serving Opportunities ID',
       apiUrl:
-          'https://api.aboundfi.com/api:jyKImnuk/servingopportunities/${servingopportunitiesId}',
+          'https://api.aboundfi.com/api:jyKImnuk/servingopportunities/$servingopportunitiesId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -784,10 +782,10 @@ class ChurchGroupIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Church Group ID',
       apiUrl:
-          'https://api.aboundfi.com/api:tD5YIX3-/churchgroup/${churchgroupId}',
+          'https://api.aboundfi.com/api:tD5YIX3-/churchgroup/$churchgroupId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -880,7 +878,7 @@ class GetBulletinIDViewCountCall {
           'https://api.aboundfi.com/api:fuKs4M51/generalannoucementsviewsCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'generalAnnouncements_id': generalannouncementsId,
@@ -910,7 +908,7 @@ class ChurchPrayerResponseCountCall {
       apiUrl: 'https://api.aboundfi.com/api:11sPz9tq/churchprayerresponseCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'prayer_id': prayerId,
@@ -940,7 +938,7 @@ class ChurchPrayerResponseCountCopyCopyCall {
       apiUrl: 'https://api.aboundfi.com/api:11sPz9tq/churchprayerresponseCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'prayer_id': prayerId,
@@ -971,7 +969,7 @@ class UserResponseToAUserPrayerCountCall {
           'https://api.aboundfi.com/api:11sPz9tq/userresponse4sharedprayerwithchurchCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'userPrayerSharedWithChurch_id': userPrayerSharedWithChurchId,
@@ -1001,7 +999,7 @@ class ChurchGroupMembersCountCall {
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/groupmemberCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'churchgroup_id': churchgroupId,
@@ -1032,7 +1030,7 @@ class TeamDirectoryCOuntServingCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiessignupCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'servingopportunities_id': servingopportunitiesId,
@@ -1063,7 +1061,7 @@ class TeamSizeInAServingOpportunityCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiessignupCount',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'servingopportunities_id': servingopportunitiesId,
@@ -1094,7 +1092,7 @@ class ChurchPrayerResponseExistsCall {
           'https://api.aboundfi.com/api:11sPz9tq/churchprayerresponseExists',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'prayer_id': prayerId,
@@ -1125,7 +1123,7 @@ class UserResponseToAUserPrayerExistsCall {
           'https://api.aboundfi.com/api:11sPz9tq/userresponse4sharedprayerwithchurchExists',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'userPrayerSharedWithChurch_id': userPrayerSharedWithChurchId,
@@ -1156,7 +1154,7 @@ class ServingInAMinistryExistCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiessignupExist4user',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'servingopportunities_id': servingopportunitiesId,
@@ -1186,7 +1184,7 @@ class GroupMemberExistsCall {
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/groupmemberExists',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'churchgroup_id': churchgroupId,
@@ -1217,7 +1215,7 @@ class GetBulletinIDReadReceiptCall {
           'https://api.aboundfi.com/api:fuKs4M51/generalannoucementsviewsRead',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'generalAnnouncements_id': generalannouncementsId,
@@ -1244,10 +1242,10 @@ class GetGroupIDCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Group ID',
-      apiUrl: 'https://api.aboundfi.com/api:FKbVSqc1/group/${groupId}',
+      apiUrl: 'https://api.aboundfi.com/api:FKbVSqc1/group/$groupId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1310,10 +1308,10 @@ class GetUSerPrayerIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get USer Prayer ID',
       apiUrl:
-          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/${userprayerId}',
+          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/$userprayerId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1358,10 +1356,10 @@ class GetUSerPrayerIDCopyCopyCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get USer Prayer ID Copy Copy',
       apiUrl:
-          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/${userprayerId}',
+          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/$userprayerId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1406,10 +1404,10 @@ class DeletePrayerIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Delete Prayer ID',
       apiUrl:
-          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/${userprayerId}',
+          'https://api.aboundfi.com/api:ScJhCWfk/userprayer/$userprayerId',
       callType: ApiCallType.DELETE,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1454,10 +1452,10 @@ class GetBibleReadingIDCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Bible Reading ID',
       apiUrl:
-          'https://api.aboundfi.com/api:rgNjvYK9/bible_reading/${bibleReadingId}',
+          'https://api.aboundfi.com/api:rgNjvYK9/bible_reading/$bibleReadingId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1516,10 +1514,10 @@ class GetDevotionsIDCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Devotions ID',
-      apiUrl: 'https://api.aboundfi.com/api:7PwslRrq/devotions/${devotionsId}',
+      apiUrl: 'https://api.aboundfi.com/api:7PwslRrq/devotions/$devotionsId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1574,10 +1572,10 @@ class GetEventByIDCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Event by ID',
-      apiUrl: 'https://api.aboundfi.com/api:JtFB9yc_/event/${eventId}',
+      apiUrl: 'https://api.aboundfi.com/api:JtFB9yc_/event/$eventId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1670,10 +1668,10 @@ class GetUserIDForDirectoryCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get User ID for Directory',
-      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/user/${userId}',
+      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/user/$userId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1753,10 +1751,10 @@ class GetUserIDForDirectoryCopyCopyCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get User ID for Directory Copy Copy',
-      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/user/${userId}',
+      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/user/$userId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -1836,10 +1834,10 @@ class UserDetailsForDirectoryCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'User Details for Directory',
-      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/directory/${userId}',
+      apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/directory/$userId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'user_id': userId,
@@ -2033,7 +2031,7 @@ class GeneralAnnouncementsCall {
       apiUrl: 'https://api.aboundfi.com/api:fuKs4M51/generalAnnouncements',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2056,7 +2054,7 @@ class GroupBulletinAnnoucementsCall {
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/churchgroupbulletin',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'churchgroup_id': churchgroupId,
@@ -2079,10 +2077,10 @@ class EventListCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Event List',
       apiUrl:
-          'https://api.aboundfi.com/api:JtFB9yc_/event?church_id=${churchId}',
+          'https://api.aboundfi.com/api:JtFB9yc_/event?church_id=$churchId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2104,7 +2102,7 @@ class SharedUserPrayersWithChurchOnBulletinCall {
       apiUrl: 'https://api.aboundfi.com/api:ScJhCWfk/prayersharedwithchurch',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2127,7 +2125,7 @@ class SharedUserPrayersWithChurchAdminCall {
           'https://api.aboundfi.com/api:ScJhCWfk/prayersharedwithchurchAdmin',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2149,7 +2147,7 @@ class PrayersCall {
       apiUrl: 'https://api.aboundfi.com/api:11sPz9tq/prayer',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2171,7 +2169,7 @@ class PraisesCall {
       apiUrl: 'https://api.aboundfi.com/api:FZN0kU3I/praise',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2193,7 +2191,7 @@ class HealthNeedsCall {
       apiUrl: 'https://api.aboundfi.com/api:vtWhCzTZ/healthneed',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2215,7 +2213,7 @@ class GroupsCall {
       apiUrl: 'https://api.aboundfi.com/api:FKbVSqc1/group',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2237,7 +2235,7 @@ class ChurchGroupCall {
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/churchgroup',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2265,7 +2263,7 @@ class ServingOpportunitiesWeeklyCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiesweekly',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2288,7 +2286,7 @@ class ServingOpportunitiesOneTimeCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiesoneTime',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2310,7 +2308,7 @@ class MealTalkActiveCall {
       apiUrl: 'https://api.aboundfi.com/api:BAxqzBjb/mealtalk',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2332,7 +2330,7 @@ class MyGroupsCall {
       apiUrl: 'https://api.aboundfi.com/api:FKbVSqc1/mygroup',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2353,10 +2351,10 @@ class ChurchDirectoryCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Church Directory',
       apiUrl:
-          'https://api.aboundfi.com/api:jTS_wo8z/userchurch?church_id=${churchId}',
+          'https://api.aboundfi.com/api:jTS_wo8z/userchurch?church_id=$churchId',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2379,7 +2377,7 @@ class NewChurchDirectoryCall {
       apiUrl: 'https://api.aboundfi.com/api:jTS_wo8z/userchurch',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2401,7 +2399,7 @@ class AuthMeCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/auth/me',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2505,7 +2503,7 @@ class GetUserAddressCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/useraddress',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       returnBody: true,
@@ -2524,7 +2522,7 @@ class GetChurchInformationCall {
   }) async {
     return ApiManager.instance.makeApiCall(
       callName: 'Get Church Information',
-      apiUrl: 'https://api.aboundfi.com/api:9-nC72AV/church/${churchId}',
+      apiUrl: 'https://api.aboundfi.com/api:9-nC72AV/church/$churchId',
       callType: ApiCallType.GET,
       headers: {},
       params: {},
@@ -2688,13 +2686,13 @@ class MemberSignUpFirstStepCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "name": "${name}",
-  "email": "${email}",
-  "password": "${password}",
-  "opt_in": "${optIn}",
-  "is_agreed": "${isAgreed}",
-  "church_id": "${churchId}",
-  "phone": "${phone}"
+  "name": "$name",
+  "email": "$email",
+  "password": "$password",
+  "opt_in": "$optIn",
+  "is_agreed": "$isAgreed",
+  "church_id": "$churchId",
+  "phone": "$phone"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member SignUp First Step',
@@ -2755,13 +2753,13 @@ class MemberSignUpApprovalCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "name": "${name}",
-  "email": "${email}",
-  "password": "${password}",
-  "opt_in": "${optIn}",
-  "is_agreed": "${isAgreed}",
-  "church_id": "${churchId}",
-  "phone": "${phone}"
+  "name": "$name",
+  "email": "$email",
+  "password": "$password",
+  "opt_in": "$optIn",
+  "is_agreed": "$isAgreed",
+  "church_id": "$churchId",
+  "phone": "$phone"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member SignUp Approval',
@@ -2821,12 +2819,12 @@ class VisitorSignupCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "name": "${name}",
-  "email": "${email}",
-  "opt_in": "${optIn}",
-  "is_agreed": "${isAgreed}",
-  "church_id": "${churchId}",
-  "phone": "${phone}"
+  "name": "$name",
+  "email": "$email",
+  "opt_in": "$optIn",
+  "is_agreed": "$isAgreed",
+  "church_id": "$churchId",
+  "phone": "$phone"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Visitor Signup',
@@ -2882,14 +2880,14 @@ class OTPVerificationCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "otp": "${otp}"
+  "otp": "$otp"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'OTP verification ',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/otpVerifiedMembers',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -2931,17 +2929,17 @@ class MemberProfileCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "date_of_birth": "${dateOfBirth}",
-  "gender_id": "${genderId}",
-  "marital_status_id": "${maritalStatusId}",
-  "anniversary": "${anniversary}"
+  "date_of_birth": "$dateOfBirth",
+  "gender_id": "$genderId",
+  "marital_status_id": "$maritalStatusId",
+  "anniversary": "$anniversary"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Profile',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/memberProfile',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -2963,14 +2961,14 @@ class MemberTestimonyCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "testimony": "${testimony}"
+  "testimony": "$testimony"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Testimony',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/memberTestimony',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -2992,14 +2990,14 @@ class SubmitForApprovalCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "submit": "${submit}"
+  "submit": "$submit"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Submit for Approval',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/submitforadmin',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3026,19 +3024,19 @@ class MemberAddressCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "address": "${address}",
-  "address_2": "${address2}",
-  "city": "${city}",
-  "state": "${state}",
-  "country": "${country}",
-  "zipcode": "${zipcode}"
+  "address": "$address",
+  "address_2": "$address2",
+  "city": "$city",
+  "state": "$state",
+  "country": "$country",
+  "zipcode": "$zipcode"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Address',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/useraddress',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3063,7 +3061,7 @@ class MemberProfilePictureCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/memberProfilePic',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'authToken': authToken,
@@ -3090,7 +3088,7 @@ class MemberCoverPhotoCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/memberCover',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'authToken': authToken,
@@ -3124,24 +3122,24 @@ class MemberSoulJourneySelfCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "is_saved": "${isSaved}",
-  "savedDate": "${savedDate}",
-  "church_id": "${churchId}",
-  "is_baptized": "${isBaptized}",
-  "baptizedDate": "${baptizedDate}",
-  "is_a_member": "${isAMember}",
-  "membershipDate": "${membershipDate}",
-  "is_discipled": "${isDiscipled}",
-  "discipleshipDate": "${discipleshipDate}",
-  "is_serving": "${isServing}",
-  "servingSinceDate": "${servingSinceDate}"
+  "is_saved": "$isSaved",
+  "savedDate": "$savedDate",
+  "church_id": "$churchId",
+  "is_baptized": "$isBaptized",
+  "baptizedDate": "$baptizedDate",
+  "is_a_member": "$isAMember",
+  "membershipDate": "$membershipDate",
+  "is_discipled": "$isDiscipled",
+  "discipleshipDate": "$discipleshipDate",
+  "is_serving": "$isServing",
+  "servingSinceDate": "$servingSinceDate"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Member Soul Journey Self',
       apiUrl: 'https://api.aboundfi.com/api:QITg_Tf-/memberSelfJourney',
       callType: ApiCallType.PATCH,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3182,14 +3180,14 @@ class PasswordChangeCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "password": "${password}"
+  "password": "$password"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Password Change',
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/passwordChange',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3213,7 +3211,7 @@ class AccountDeleteRequestCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/requestAccountDeletion',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       bodyType: BodyType.NONE,
@@ -3236,7 +3234,7 @@ class AccountDeleteCancelCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/cancelAccountDeletion',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       bodyType: BodyType.NONE,
@@ -3258,15 +3256,15 @@ class CreateUserPrayerCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "title": "${title}",
-  "description": "${description}"
+  "title": "$title",
+  "description": "$description"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Create User Prayer',
       apiUrl: 'https://api.aboundfi.com/api:ScJhCWfk/userprayer',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3289,15 +3287,15 @@ class CreateABulletinViewRecordCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "generalannouncements_id": "${generalannouncementsId}",
-  "viewed": "${viewed}"
+  "generalannouncements_id": "$generalannouncementsId",
+  "viewed": "$viewed"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Create a Bulletin View Record',
       apiUrl: 'https://api.aboundfi.com/api:fuKs4M51/generalannoucementsviews',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3319,14 +3317,14 @@ class CreateAChurchPrayerResponseCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "prayer_id": "${prayerId}"
+  "prayer_id": "$prayerId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Create a Church Prayer Response',
       apiUrl: 'https://api.aboundfi.com/api:11sPz9tq/churchprayerresponse',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3348,7 +3346,7 @@ class CreateAUserResponseForAUserPrayerCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "userprayersharedwithchurch_id": "${userprayersharedwithchurchId}"
+  "userprayersharedwithchurch_id": "$userprayersharedwithchurchId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Create a User Response for a User Prayer',
@@ -3356,7 +3354,7 @@ class CreateAUserResponseForAUserPrayerCall {
           'https://api.aboundfi.com/api:11sPz9tq/userresponse4sharedprayerwithchurch',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3378,7 +3376,7 @@ class JoinAServingOpportunityTeamCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "servingopportunities_id": "${servingopportunitiesId}"
+  "servingopportunities_id": "$servingopportunitiesId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Join a Serving Opportunity Team',
@@ -3386,7 +3384,7 @@ class JoinAServingOpportunityTeamCall {
           'https://api.aboundfi.com/api:jyKImnuk/servingopportunitiessignup',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3408,14 +3406,14 @@ class JoinAGroupCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "churchgroup_id": "${churchgroupId}"
+  "churchgroup_id": "$churchgroupId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Join a group',
       apiUrl: 'https://api.aboundfi.com/api:tD5YIX3-/groupmember',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3438,15 +3436,15 @@ class SharePrayerWithCHurchCall {
   }) async {
     final ffApiRequestBody = '''
 {
-  "church_id": "${churchId}",
-  "userprayer_id": "${prayerId}"
+  "church_id": "$churchId",
+  "userprayer_id": "$prayerId"
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Share Prayer With CHurch',
       apiUrl: 'https://api.aboundfi.com/api:ScJhCWfk/prayersharedwithchurch',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {},
       body: ffApiRequestBody,
@@ -3463,7 +3461,7 @@ class SharePrayerWithCHurchCall {
 
 class SendNotificationCall {
   static Future<ApiCallResponse> call() async {
-    final ffApiRequestBody = '''
+    const ffApiRequestBody = '''
 {
   "app_id": "5b6de3e3-66b8-49e3-90c2-ffa6aa310bbc",
   "include_player_ids": ["{{player_id}}"],
@@ -3502,7 +3500,7 @@ class AuthMeChurchCall {
       apiUrl: 'https://api.aboundfi.com/api:STwO9R5V/auth/meWithChurch',
       callType: ApiCallType.GET,
       headers: {
-        'Authorization': 'Bearer ${authToken}',
+        'Authorization': 'Bearer $authToken',
       },
       params: {
         'church_id': churchId,

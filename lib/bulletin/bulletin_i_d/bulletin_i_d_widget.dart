@@ -3,8 +3,6 @@ import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,7 +36,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       _model.apiResult8xs = await CreateABulletinViewRecordCall.call(
         authToken: currentAuthenticationToken,
-        generalannouncementsId: widget!.bulletinID,
+        generalannouncementsId: widget.bulletinID,
         viewed: true,
       );
     });
@@ -58,7 +56,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
     return FutureBuilder<ApiCallResponse>(
       future: GetBulletinByIDCall.call(
         authToken: currentAuthenticationToken,
-        generalannouncementsId: widget!.bulletinID,
+        generalannouncementsId: widget.bulletinID,
       ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
@@ -111,11 +109,11 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: Container(
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -159,7 +157,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             ),
@@ -192,7 +190,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                     ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -204,7 +202,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 20.0, 0.0, 20.0),
                             child: Text(
                               valueOrDefault<String>(
@@ -249,7 +247,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -285,14 +283,14 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 5.0, 0.0),
                                         child: Icon(
                                           Icons.mode_comment_outlined,
@@ -315,7 +313,7 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -358,20 +356,20 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                   Flexible(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(),
+                        decoration: const BoxDecoration(),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   20.0, 10.0, 20.0, 0.0),
                               child: Container(
                                 width: 100.0,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -382,13 +380,13 @@ class _BulletinIDWidgetState extends State<BulletinIDWidget> {
                                       size: 24.0,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: FutureBuilder<ApiCallResponse>(
                                         future: GetBulletinIDViewCountCall.call(
                                           authToken: currentAuthenticationToken,
                                           generalannouncementsId:
-                                              widget!.bulletinID,
+                                              widget.bulletinID,
                                         ),
                                         builder: (context, snapshot) {
                                           // Customize what your widget looks like when it's loading.

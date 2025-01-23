@@ -3,13 +3,10 @@ import '/backend/api_requests/api_calls.dart';
 import '/components/empty_list_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'directory_model.dart';
 export 'directory_model.dart';
 
@@ -60,7 +57,7 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
                 size: 24.0,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                 child: Text(
                   '${FFAppConstants.churchShortName} Directory',
                   style: FlutterFlowTheme.of(context).titleLarge.override(
@@ -73,14 +70,14 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -117,7 +114,7 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
                             r'''$''',
                           ).toList();
                           if (churchDirectory.isEmpty) {
-                            return EmptyListWidget();
+                            return const EmptyListWidget();
                           }
 
                           return RefreshIndicator(
@@ -139,7 +136,7 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
                                 final churchDirectoryItem =
                                     churchDirectory[churchDirectoryIndex];
                                 return Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 5.0, 0.0, 5.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -162,22 +159,22 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
                                     },
                                     child: Container(
                                       width: 100.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 10.0, 0.0, 10.0),
                                             child: ClipRRect(
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: CachedNetworkImage(
                                                 fadeInDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 fadeOutDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 imageUrl: getJsonField(
                                                   churchDirectoryItem,
                                                   r'''$.member.profilePhoto''',
@@ -190,7 +187,7 @@ class _DirectoryWidgetState extends State<DirectoryWidget> {
                                           ),
                                           Flexible(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       10.0, 0.0, 0.0, 0.0),
                                               child: Text(
